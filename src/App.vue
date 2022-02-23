@@ -37,6 +37,7 @@
       </v-btn>
     </v-app-bar>
 
+        <vapp />
     <v-main>
       <router-view/>
     </v-main>
@@ -45,9 +46,13 @@
 
 <script lang="ts">
 import Vue from 'vue';
-
+import Vapp from './components/vapp.vue';
 export default Vue.extend({
   name: 'App',
+  components:{
+
+    Vapp
+  },
 
   data: () => ({
     //
