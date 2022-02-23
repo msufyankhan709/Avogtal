@@ -1,41 +1,41 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+  <v-toolbar
+    color="blue"
+    dark
+  >
+  <v-img style="max-width: 200px;margin-left: 5%" src="@/assets/logo.svg"></v-img>
+    <v-toolbar-title style="margin-left: 100px">For Companies</v-toolbar-title>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+    <v-divider
+      class="mx-4"
+      vertical
+    ></v-divider>
 
-      <v-spacer></v-spacer>
+    <span class="subheading">For Engineers</span>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+    <v-spacer></v-spacer>
+
+    <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn text>
+       Hire Talent
       </v-btn>
-    </v-app-bar>
+
+      <v-divider vertical></v-divider>
+
+      <v-btn text>
+        Find Work
+      </v-btn>
+
+      <v-divider vertical></v-divider>
+
+  
+
+      <v-divider vertical></v-divider>
+    </v-toolbar-items>
+
+    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+  </v-toolbar>
 
         <vapp />
     <v-main>
