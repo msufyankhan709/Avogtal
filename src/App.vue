@@ -5,7 +5,7 @@
     dark
   >
   <v-img style="max-width: 200px;margin-left: 5%" src="@/assets/logo.svg"></v-img>
-    <v-toolbar-title style="margin-left: 100px">For Companies</v-toolbar-title>
+     <v-toolbar-title style="margin-left: 100px">For Companies</v-toolbar-title>
 
     <v-divider
       class="mx-4"

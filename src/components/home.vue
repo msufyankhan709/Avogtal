@@ -6,9 +6,10 @@
           <h1>Build Your Software</h1>
           <h1>Development Dream Team Now</h1>
           <h3>
-            We are the development partner of choice for over 300 clients.
+            We are the development partner of choice for over 300 <br />
+            clients.
           </h3>
-          <v-btn class="button" style="margin-top: 16px; margin-left: 50px">
+          <v-btn class="button" style="margin-top: 16%; margin-left: 50px">
             hire now
           </v-btn>
         </div>
@@ -30,6 +31,18 @@
       ></v-flex>
     </v-layout>
     <v-divider class="mt-7"> </v-divider>
+    <v-laayout>
+      <div class="radio">
+        <v-container fluid>
+          <v-radio-group v-model="row" row>
+            <v-radio label="" value="radio-1"></v-radio>
+            <v-radio label="" value="radio-2"></v-radio>
+            <v-radio label="" value="radio-3"></v-radio>
+          </v-radio-group>
+        </v-container>
+      </div>
+    </v-laayout>
+
     <h3 style="margin-left: 45%; margin-top: 7%; color: #cdc8c8">
       What We Offer
     </h3>
@@ -48,7 +61,7 @@
         />
 
         <h3>Front-End Engineers</h3>
-        <v-btn class="button">EXPLORE</v-btn>
+        <v-btn class="btn">EXPLORE</v-btn>
       </a>
       <a
         href="#"
@@ -64,7 +77,7 @@
 
         <h3>Back-End Engineers</h3>
 
-        <v-btn class="button">EXPLORE</v-btn>
+        <v-btn class="btn">EXPLORE</v-btn>
       </a>
       <a
         href="#"
@@ -80,7 +93,7 @@
 
         <h3>Full-Stack Engineers</h3>
 
-        <v-btn class="button">EXPLORE</v-btn>
+        <v-btn class="btn">EXPLORE</v-btn>
       </a>
       <a
         href="#"
@@ -96,7 +109,7 @@
 
         <h3>DevOps Engineers</h3>
 
-        <v-btn class="button">EXPLORE</v-btn>
+        <v-btn class="btn">EXPLORE</v-btn>
       </a>
     </v-layout>
     <v-layout style="background-color: #f1ebeb" class="btm">
@@ -132,8 +145,85 @@
           <v-btn style="margin-top: 15%" class="button">hire now</v-btn>
         </div>
       </v-flex>
-      
     </v-layout>
+    <v-layout>
+      <v-flex>
+        <h2 style="text-align: center; color: #cdc8c8; margin-top: 7%">
+          What Makes Us Different?
+        </h2>
+        <h1 style="text-align: center">
+          As-Needed Vetted Engineers At Your Service
+        </h1>
+      </v-flex>
+    </v-layout>
+    <span class="span">
+      <v-container class="grey lighten-5">
+        <v-row no-gutters>
+          <v-col v-for="n in 3" :key="n">
+            <v-card>
+              <v-img
+                width="100px"
+                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/vatted.png"
+              ></v-img>
+              <v-card-title>Vetted Engineers</v-card-title>
+              <v-card-text>
+                <v-row class="mx-0">
+                  <v-rating
+                    :value="4.5"
+                    color="amber"
+                    half-increments
+                    readonly
+                    size="14"
+                  ></v-rating>
+
+                  <div class="grey--text ms-4">4.5 (413)</div>
+                </v-row>
+
+                <div class="my-4 text-subtitle-1">$ • Italian, Cafe</div>
+
+                <div>
+                  Get access to experienced engineers who we have assessed and
+                  chosen just for you.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+        <v-row class="mb-6" no-gutters>
+          <v-col v-for="n in 3" :key="n">
+            <v-card class="pa-2" tile outlined>
+              <v-img
+                height="100px"
+                width="100px"
+                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/scalable.png"
+              ></v-img>
+              <v-card-title>Scalable Teams</v-card-title>
+              <v-card-text>
+                <v-row class="mx-0">
+                  <v-rating
+                    :value="4.5"
+                    color="amber"
+                    dense
+                    half-increments
+                    readonly
+                    size="14"
+                  ></v-rating>
+
+                  <div class="grey--text ms-4">4.5 (413)</div>
+                </v-row>
+
+                <div class="my-4 text-subtitle-1">$ • Italian, Cafe</div>
+
+                <div>
+                  Whether you need a one person staff augmentation or a twenty
+                  person development army, we have you covered.
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </span>
   </div>
 </template>
 
@@ -200,5 +290,22 @@ export default {
 }
 .text {
   margin-left: 20%;
+}
+.btn {
+  opacity: 0;
+}
+.btn:hover {
+  opacity: 100;
+  box-shadow: #3f00b5;
+}
+.card {
+  margin-right: 60%;
+}
+.radio {
+  margin-left: 45%;
+}
+.span {
+  width: 33%;
+  height: 100%;
 }
 </style>
