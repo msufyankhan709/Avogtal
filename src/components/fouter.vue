@@ -1,49 +1,85 @@
 <template>
+<div style="color: blue">
   <v-footer dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="blue">
-        <div class="ftr-left">
-          <img
-            src="https://avogtal.com/wp-content/themes/avogtal/assets/images/logo-footer.svg"
-            alt="Avogtal"
-          />
-
-          <h6>
-            We take pride in matching and hiring only the best talent for <br>
-            companies of all sizes and from all industries.
-          </h6>
-
-          <div class="ftr-social">
-            <!--<a href="#"><img src="https://avogtal.com/wp-content/themes/avogtal/assets/images/fb-icon.svg" alt="faceook"></a>-->
-
-            <!--<a href="#"><img src="https://avogtal.com/wp-content/themes/avogtal/assets/images/insta-icon.svg" alt="instagram"></a>-->
-
-            <!--<a href="#"><img src="https://avogtal.com/wp-content/themes/avogtal/assets/images/twiter-icon.svg" alt="twitter"></a>-->
-
+      <v-card-text >
+        <div class="text-right">
+          <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </div>
+        <div class="d-flex justify-space-between justify-space-around">
+          <div class="text-left left">
+            <img
+              height="100px"
+              width="100px"
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/logo-footer.svg"
+              alt="Avogtal"
+            />
+            <h6 class="d-flex subtitle-1">
+              We take pride in matching and hiring only the best talent for
+              companies of all sizes and from all industries.
+            </h6>
+            <br />
             <a href="https://www.linkedin.com/company/avogtal" target="_blank"
               ><img
                 src="https://avogtal.com/wp-content/themes/avogtal/assets/images/linkedin-icon.svg"
                 alt="lilnkedin"
             /></a>
           </div>
-        </div>
+            <div class="right d-flex justify-space-between justify-space-around;"
+             style="display: block">
+              <div class="column">
+                <h3>HELP</h3>
+
+                <ul>
+                  <li class="hide"><a href="#">Help Center</a></li>
+
+                  <li><a href="https://avogtal.com/faqs">Client FAQs</a></li>
+
+                  <li>
+                    <a href="https://avogtal.com/faqs">Freelancer FAQs</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column">
+                <h3>COMPANY</h3>
+
+                <ul>
+                  <li><a href="https://avogtal.com/about">About</a></li>
+
+                  <li class="hide"><a href="#">Team</a></li>
+
+                  <li class="hide"><a href="#">Press</a></li>
+                </ul>
+              </div>
+
+              <div class="column">
+                <h3>CONNECT</h3>
+
+                <ul>
+                  <li><a href="https://avogtal.com/blogs">Blog</a></li>
+
+                  <li>
+                    <a href="#" class="contact-modal-toggle"> Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         <v-spacer></v-spacer>
-
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
-        </v-btn>
-      </v-card-title>
-
-      <v-card-text class="py-2 white--text text-center">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
       </v-card-text>
+   <v-divider style="color: white" class="mt-16 "></v-divider>
+     <h6 style="color: white;text-align:center">Copyright © Avogtal 2021 | All Rights Reserved.</h6>
     </v-card>
   </v-footer>
+  </div>
 </template>
 
-<script>
+<script> 
 export default {
   name: "fouter",
   data: () => ({
@@ -58,5 +94,13 @@ body {
 }
 .img {
   width: 1%;
+}
+.left{
+  width: 40%;
+}
+.right{
+  width: 40%;
+  display: flex;
+  margin-top: 2%;
 }
 </style>
