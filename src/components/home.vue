@@ -53,7 +53,7 @@
         class="iduser"
         role="group"
         aria-label="1 / 5"
-        style="width: 262.842px; margin-right: 24px"
+        style="width: 262.842px;text-decoration: none; margin-right: 24px"
       >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-development-.svg"
@@ -93,7 +93,7 @@
         class="iduser"
         role="group"
         aria-label="3 / 5"
-        style="width: 262.842px; margin-right: 24px"
+        style="width: 262.842px;text-decoration: none; margin-right: 24px"
       >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/full-stack.svg"
@@ -114,7 +114,7 @@
         class="iduser"
         role="group"
         aria-label="4 / 5"
-        style="width: 262.842px; margin-right: 24px"
+        style="width: 262.842px;text-decoration: none; margin-right: 24px"
       >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/devops.svg"
@@ -138,6 +138,14 @@
           src="@/assets/hw-img.png"
         ></v-img
       ></v-flex>
+      <div class="line">
+        <v-timeline>
+    <v-timeline-item></v-timeline-item>
+    <v-timeline-item class="text-right">
+    </v-timeline-item>
+    <v-timeline-item></v-timeline-item>
+  </v-timeline>
+  </div>
       <v-flex md6>
         <h3 style="margin-left: 15%; color: #cdc8c8; margin-top: 20%">
           How It Works
@@ -162,7 +170,7 @@
             Vet the candidates with us to find the best cultural and technical
             fit for your organization.
           </h3>
-          <v-btn style="margin-top: 15%" class="button">hire now</v-btn>
+          <v-btn style="margin-top: 7%;margin-left:15%" class="button">hire now</v-btn>
         </div>
       </v-flex>
     </v-layout>
@@ -577,6 +585,9 @@ export default {
 }
 ul{
   list-style-type: none;
+}
+.line {
+margin-top: 15%;
 }
 
 </style>
