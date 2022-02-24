@@ -61,14 +61,19 @@
         />
 
         <h3>Front-End Engineers</h3>
-        <v-btn class="btn">EXPLORE</v-btn>
+       <span class="btn" style="display: block">
+          <v-btn text plain medium>
+            explore
+            <v-icon small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </span>
       </a>
       <a
         href="#"
         class="iduser"
         role="group"
         aria-label="2 / 5"
-        style="width: 262.842px; margin-right: 24px"
+        style="width: 262.842px; text-decoration: none; margin-right: 24px"
       >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-backend.svg"
@@ -76,8 +81,12 @@
         />
 
         <h3>Back-End Engineers</h3>
-
-        <v-btn class="btn">EXPLORE</v-btn>
+        <span class="btn" style="display: block">
+          <v-btn text plain medium>
+            explore
+            <v-icon small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </span>
       </a>
       <a
         href="#"
@@ -93,7 +102,12 @@
 
         <h3>Full-Stack Engineers</h3>
 
-        <v-btn class="btn">EXPLORE</v-btn>
+     <span class="btn" style="display: block">
+          <v-btn text plain medium>
+            explore
+            <v-icon small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </span>
       </a>
       <a
         href="#"
@@ -109,7 +123,12 @@
 
         <h3>DevOps Engineers</h3>
 
-        <v-btn class="btn">EXPLORE</v-btn>
+      <span class="btn" style="display: block">
+          <v-btn text plain medium>
+            explore
+            <v-icon small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </span>
       </a>
     </v-layout>
     <v-layout style="background-color: #f1ebeb" class="btm">
@@ -123,6 +142,7 @@
         <h3 style="margin-left: 15%; color: #cdc8c8; margin-top: 20%">
           How It Works
         </h3>
+
         <h1 style="margin-left: 15%">Talk, Choose, Deploy</h1>
         <div class="text">
           <h2 style="color: blue">Share Your Requirements</h2>
@@ -224,6 +244,231 @@
         </v-row>
       </v-container>
     </span>
+    <v-layout>
+      <v-flex class="foter">
+        <h3 style="color: green; margin-top: 5%">
+          Top 2% Of Engineering Talent
+        </h3>
+        <h1 style="color: white">
+          Focus on your tech, while we manage <br />
+          everything else
+        </h1>
+        <h3 style="color: gray">
+          We find, hire, and train top engineering talent so you don't have to.
+          All you need to worry <br />
+          about is achieving your business goals using our pre-vetted engineers.
+        </h3>
+        <div class="mt-16">
+          <div
+            class="
+              hm-cards
+              pb-5
+              d-flex
+              justify-space-between justify-space-around
+            "
+          >
+            <div class="hm-card">
+              <div
+                class="d-flex justify-space-between"
+                style="color: white"
+              >
+                <img
+                  src="https://avogtal.com/wp-content/themes/avogtal/assets/images/finding.svg"
+                  alt="Finding"
+                />
+                <span style="display: block" class="pl-16 text-left">
+                  <h3>Finding</h3>
+                  <ul>
+                    <li>Recruitment</li>
+                    <li>Onboarding</li>
+                    <li>Checks and Balances</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+            <div class="vl"></div>
+            <div class="hm-card">
+              <div class="d-flex justify-space-between" style="color: white">
+              <img
+                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/training.svg"
+                alt="Training"
+              />
+
+               <span class="text-left span">
+                  <h3>Training</h3>
+                <ul>
+                  <li>Technical</li>
+                  <li>Communication</li>
+                  <li>Cultural</li>
+                </ul>
+               </span>
+              </div>
+            </div>
+            <div class="vl"></div>
+            <div class="hm-card">
+              <div class="d-flex justify-space-between" style="color: white">
+              <img
+                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/hr.svg" 
+                alt="HR"
+              />
+               <span class="text-left span">
+                <h3>HR</h3>
+                <ul>
+                  <li>Payroll</li>
+                  <li>Retention</li>
+                  <li>Workspaces</li>
+                </ul>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </v-flex>
+    </v-layout>
+    <v-layout>
+      <v-flex>
+        <h3 style="color: #a19a9a; margin-top: 6%; margin-left: 43%">
+          Testimonials
+        </h3>
+        <h1 style="margin-left: 35%">Hear From Our Clients</h1>
+        <v-img
+          style="width: 100px; margin-left: 43%"
+          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/Michelle-Duval.svg"
+        ></v-img>
+        <h4 style="margin-top: 2%; margin-left: 43%">Michelle Duval</h4>
+        <h6 style="margin-left: 40%">
+          Founder + CEO - Fingerprint for Success
+        </h6>
+        <p style="margin-top: 1%; margin-left: 30%">
+          Avogtal has proven to be our single reliable Software Development
+          <br />
+          Partner who has helped us scale up our platform from ground up. Their
+          <br />
+          development resources have been integral members of our team and
+          <br />
+          have contributed immensely in making this venture a success.
+        </p>
+      </v-flex>
+    </v-layout>
+    <div class="text2">
+      <h3 style="color: #a19a9a" class="pt-5">Avogtal Talent</h3>
+      <h1>Handpick The Resources You Need</h1>
+      <section class="h-works">
+        <div class="container">
+          <div class="ht-title"></div>
+
+          <div class="exprt-logos">
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/wordpress-logo.svg"
+              alt="WORDPRESS"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/java-logo.svg"
+              alt="JAVA"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/php-logo.svg"
+              alt="PHP"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/angular-logo.svg"
+              alt="ANGULAR"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/ror-logo.svg"
+              alt="ROR"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/android-logo.svg"
+              alt="ANDROID"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/react-logo.svg"
+              alt="REACT"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/apple-logo.svg"
+              alt="APPLE"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/html-logo.svg"
+              alt="HTML"
+            />
+
+            <img
+              src="https://avogtal.com/wp-content/themes/avogtal/assets/images/tech-logos/xarmarir-logo.svg"
+              alt="XAMARIN"
+            />
+          </div>
+
+          <div class="underline d-flex text-left justify-space-between">
+            <div class="exprt-column">
+              <ul>
+                <li>Backend Engineers</li>
+
+                <li>UIUX Engineers</li>
+
+                <li>DevOps Engineers</li>
+
+                <li>Ember.Js Engineers</li>
+
+                <li>Full Stack Engineers</li>
+              </ul>
+            </div>
+
+            <div class="exprt-column">
+              <ul>
+                <li>Frontend Engineers</li>
+
+                <li>Magento Engineers</li>
+
+                <li>Machine Learning Engineers</li>
+
+                <li>Jquery Engineers</li>
+
+                <li>React Native Engineers</li>
+              </ul>
+            </div>
+
+            <div class="exprt-column">
+              <ul>
+                <li>.NET Engineers</li>
+
+                <li>Node.JS Engineers</li>
+
+                <li>Backbone.JS Engineers</li>
+
+                <li>Web Engineers</li>
+
+                <li>Ionic Engineers</li>
+              </ul>
+            </div>
+
+            <div class="exprt-column">
+              <ul>
+                <li>Python Engineers</li>
+
+                <li>Salesforce Engineers</li>
+
+                <li>Software Engineers</li>
+
+                <li>Scala Engineers</li>
+
+                <li>Kotlin Engineers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -278,7 +523,7 @@ export default {
 .iduser {
   max-height: 100%;
   padding: 24px;
-  background-color: #f1ebeb;
+  background-color: #dbd7d7;
   border: 1px solid var(--body-bg);
   box-sizing: border-box;
   border-radius: 8px;
@@ -287,9 +532,6 @@ export default {
 .btm {
   width: 100%;
   margin-top: 7%;
-}
-.text {
-  margin-left: 20%;
 }
 .btn {
   opacity: 0;
@@ -308,4 +550,33 @@ export default {
   width: 33%;
   height: 100%;
 }
+.foter {
+  background-color: #180638;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.text2 {
+  background-color: #dbd7d7;
+  margin-top: 10%;
+  text-align: center;
+}
+.exprt-column ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 45px;
+  opacity: 0.9;
+}
+.underline {
+  grid-template-columns: 1fr 1fr;
+}
+.vl {
+  border: 1px dashed rgba(245, 245, 245, 0.418);
+  height: 150px;
+}
+ul{
+  list-style-type: none;
+}
+
 </style>
