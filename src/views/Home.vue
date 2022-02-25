@@ -1,16 +1,18 @@
 <template>
-  <hello-world />
+  <div>
+  
+    <!-- <Footer /> -->
+  </div>
 </template>
+<script>
+// import Footer from '../components/Footer.vue';
+// import Conntect from '../components/conntect.vue';
+export default{
+  name: 'Home',
 
-<script lang="ts">
-  import Vue from 'vue'
-  import HelloWorld from '../components/HelloWorld.vue'
-
-  export default Vue.extend({
-    name: 'Home',
-
-    components: {
-      HelloWorld,
-    },
-  })
+  components: {
+    // Footer,
+    // Conntect
+  },
+}
 </script>

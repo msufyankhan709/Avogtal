@@ -36,18 +36,29 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
+   
 
-    <v-main>
+        <v-main>
+           <Home />
+           <Contact />
       <router-view/>
     </v-main>
   </v-app>
-</template>
 
+</template>
 <script lang="ts">
-import Vue from 'vue';
+
+import Vue from 'vue'; 
+import Home from './views/Home.vue';
+import Contact from './components/Contact.vue'
 
 export default Vue.extend({
   name: 'App',
+components: {
+  Home,
+  Contact,
+  
+},
 
   data: () => ({
     //
