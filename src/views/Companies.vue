@@ -1,19 +1,18 @@
 <template>
   <div>
-    <home />
+    <page2 />
     <fouter />
   </div>
 </template>
 
 <script>
-import home from "@/components/home.vue";
 import fouter from "@/components/fouter.vue";
-
+import page2 from "@/components/page2.vue";
 export default {
   name: "vapp",
   components: {
-    home,
     fouter,
+    page2,
   },
 };
 </script>

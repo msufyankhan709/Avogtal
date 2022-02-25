@@ -31,7 +31,7 @@
       ></v-flex>
     </v-layout>
     <v-divider class="mt-7"> </v-divider>
-    <v-laayout>
+    <v-layout>
       <div class="radio">
         <v-container fluid>
           <v-radio-group v-model="row" row>
@@ -41,7 +41,7 @@
           </v-radio-group>
         </v-container>
       </div>
-    </v-laayout>
+    </v-layout>
 
     <h3 style="margin-left: 45%; margin-top: 7%; color: #cdc8c8">
       What We Offer
@@ -184,74 +184,15 @@
         </h1>
       </v-flex>
     </v-layout>
-    <span class="span">
-      <v-container class="grey lighten-5">
-        <v-row no-gutters>
-          <v-col v-for="n in 3" :key="n">
-            <v-card>
-              <v-img
-                width="100px"
-                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/vatted.png"
-              ></v-img>
-              <v-card-title>Vetted Engineers</v-card-title>
-              <v-card-text>
-                <v-row class="mx-0">
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
-
-                  <div class="grey--text ms-4">4.5 (413)</div>
-                </v-row>
-
-                <div class="my-4 text-subtitle-1">$ • Italian, Cafe</div>
-
-                <div>
-                  Get access to experienced engineers who we have assessed and
-                  chosen just for you.
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row class="mb-6" no-gutters>
-          <v-col v-for="n in 3" :key="n">
-            <v-card class="pa-2" tile outlined>
-              <v-img
-                height="100px"
-                width="100px"
-                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/scalable.png"
-              ></v-img>
-              <v-card-title>Scalable Teams</v-card-title>
-              <v-card-text>
-                <v-row class="mx-0">
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
-
-                  <div class="grey--text ms-4">4.5 (413)</div>
-                </v-row>
-
-                <div class="my-4 text-subtitle-1">$ • Italian, Cafe</div>
-
-                <div>
-                  Whether you need a one person staff augmentation or a twenty
-                  person development army, we have you covered.
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </span>
+ <v-layout row wrap justify-space-between justify-space-around>
+      <v-flex v-for="card in cards" :key="card.id" md5 class="mt-5">
+        <v-card :class="card.cls" tile :flat="card.flat" hover>
+          <v-img style="width: 100px" :src="card.image"></v-img>
+          <v-card-title>{{ card.title }}</v-card-title>
+          <v-card-text>{{ card.text }}</v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
     <v-layout>
       <v-flex class="foter">
         <h3 style="color: green; margin-top: 5%">
@@ -480,6 +421,73 @@
 <script>
 export default {
   name: "home",
+   data(){
+      return{
+        row:0,
+      cards: [
+        {
+          id: 0,
+          image:
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/vatted.png",
+          title: "Vetted Engineers",
+          text: "Get access to experienced engineers who we have assessed and chosen just for you.",
+          link: "",
+          cls: "success",
+          flat: false,
+        },
+        {
+          id: 1,
+          image:
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/painless.png",
+          title: "Painless Communication",
+          text: "Don’t worry, our engineers use project management tools to ensure complete transparency of work no matter where they are located",
+          link: "",
+          cls: "warning",
+          flat: false,
+        },
+        {
+          id: 2,
+          image:
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/sun-model.png",
+          title: "Follow The Sun Model",
+          text: "Having dev centers across the globe, our engineers can work on your time zones, or even around the clock if need be.",
+          link: "",
+          cls: "error",
+          flat: false,
+        },
+        {
+          id: 3,
+          image:
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/zero-risk.png",
+          title: "Zero Risk",
+          text: "Get a risk free one week trial where you get to work with our engineers directly to ensure the best fit for you.",
+          link: "",
+          cls: "primary",
+          flat: false,
+        },
+          {
+          id: 4,
+          image:
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/scalable.png",
+          title: "Scalable Teams",
+          text: "Whether you need a one person staff augmentation or a twenty person development army, we have you covered.",
+          link: "",
+          cls: "white",
+          flat: false,
+        },
+        {
+          id: 5,
+          image:
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/no-hiring.png",
+          title: "No Hiring Woes",
+          text: "We will manage hiring and resource retention, so you can focus on growing your business while we take care of the rest.",
+          link: "",
+          cls: "brown",
+          flat: false,
+        },
+      ],
+    }
+   }  
 };
 </script>
 
