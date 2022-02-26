@@ -25,7 +25,7 @@
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex md1 class="ml-6"><h3 class="mt-5">trusted by:</h3></v-flex>
+      <v-flex md1 class="ml-6"><h3 class="mt-5 blue--text">trusted by:</h3></v-flex>
       <v-flex md2
         ><v-img
           style="width: 200px; margin-left: 10%"
@@ -185,12 +185,12 @@
         <h2 style="text-align: center; color: #cdc8c8; margin-top: 7%">
           What Makes Us Different?
         </h2>
-        <h1 style="text-align: center">
+        <h1 style="text-align: center;">
           As-Needed Vetted Engineers At Your Service
         </h1>
       </v-flex>
     </v-layout>
- <v-layout row wrap justify-space-between justify-space-around>
+ <v-layout row wrap justify-space-between justify-space-around mt-6>
       <v-flex v-for="card in cards" :key="card.id" md5 class="mt-5">
         <v-card :class="card.cls" tile :flat="card.flat" hover>
           <v-img style="width: 100px" :src="card.image"></v-img>
@@ -364,57 +364,57 @@
           <div class="underline d-flex text-left justify-space-between">
             <div class="exprt-column">
               <ul>
-                <li>Backend Engineers</li>
+                <li>>  Backend Engineers</li>
 
-                <li>UIUX Engineers</li>
+                <li>>  UIUX Engineers</li>
 
-                <li>DevOps Engineers</li>
+                <li>>  DevOps Engineers</li>
 
-                <li>Ember.Js Engineers</li>
+                <li>>  Ember.Js Engineers</li>
 
-                <li>Full Stack Engineers</li>
+                <li>>  Full Stack Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>Frontend Engineers</li>
+                <li>>  Frontend Engineers</li>
 
-                <li>Magento Engineers</li>
+                <li>>  Magento Engineers</li>
 
-                <li>Machine Learning Engineers</li>
+                <li>>  Machine Learning Engineers</li>
 
-                <li>Jquery Engineers</li>
+                <li>>  Jquery Engineers</li>
 
-                <li>React Native Engineers</li>
+                <li>>  React Native Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>.NET Engineers</li>
+                <li>>  NET Engineers</li>
 
-                <li>Node.JS Engineers</li>
+                <li>>  Node.JS Engineers</li>
 
-                <li>Backbone.JS Engineers</li>
+                <li>>  Backbone.JS Engineers</li>
 
-                <li>Web Engineers</li>
+                <li>>  Web Engineers</li>
 
-                <li>Ionic Engineers</li>
+                <li>>  Ionic Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>Python Engineers</li>
+                <li>>  Python Engineers</li>
 
-                <li>Salesforce Engineers</li>
+                <li>>  Salesforce Engineers</li>
 
-                <li>Software Engineers</li>
+                <li>>  Software Engineers</li>
 
-                <li>Scala Engineers</li>
+                <li>>  Scala Engineers</li>
 
-                <li>Kotlin Engineers</li>
+                <li>>  Kotlin Engineers</li>
               </ul>
             </div>
           </div>
@@ -423,7 +423,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "home",
@@ -438,7 +437,7 @@ export default {
           title: "Vetted Engineers",
           text: "Get access to experienced engineers who we have assessed and chosen just for you ensure the best fit for you..",
           link: "",
-          cls: "success",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -448,7 +447,7 @@ export default {
           title: "Painless Communication",
           text: "Don’t worry, our engineers use project management tools to ensure complete transparency of work no matter where they are located",
           link: "",
-          cls: "warning",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -458,7 +457,7 @@ export default {
           title: "Follow The Sun Model",
           text: "Having dev centers across the globe, our engineers can work on your time zones, or even around the clock if need be.",
           link: "",
-          cls: "error",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -468,7 +467,7 @@ export default {
           title: "Zero Risk",
           text: "Get a risk free one week trial where you get to work with our engineers directly to ensure the best fit for you.",
           link: "",
-          cls: "primary",
+          cls: "Grey",
           flat: false,
         },
           {
@@ -478,7 +477,7 @@ export default {
           title: "Scalable Teams",
           text: "Whether you need a one person staff augmentation or a twenty person development army, we have you covered.",
           link: "",
-          cls: "purple",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -488,7 +487,7 @@ export default {
           title: "No Hiring Woes",
           text: "We will manage hiring and resource retention, so you can focus on growing your business while we take care of the rest.",
           link: "",
-          cls: "brown",
+          cls: "Grey",
           flat: false,
         },
       ],

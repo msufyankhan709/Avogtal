@@ -35,7 +35,7 @@
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex md1 class="ml-6"><h3 class="mt-5">trusted by:</h3></v-flex>
+      <v-flex md1 class="ml-6"><h3 class="mt-5 blue--text">trusted by:</h3></v-flex>
       <v-flex md2
         ><v-img
           style="width: 200px; margin-left: 10%"
@@ -55,7 +55,7 @@
       skillsets with ideal, career- <br />
       defining opportunities where you can make a difference.
     </h4>
-    <v-layout row wrap justify-space-between justify-space-around>
+    <v-layout row wrap justify-space-between justify-space-around mt-6>
       <v-flex v-for="card in cards" :key="card.id" md5 class="mt-5">
         <v-card :class="card.cls" tile :flat="card.flat" hover>
           <v-img style="width: 100px" :src="card.image"></v-img>
@@ -379,58 +379,58 @@
           <div class="underline d-flex text-left justify-space-between">
             <div class="exprt-column">
               <ul>
-                <li>Backend Engineers</li>
+                <li>>  Backend Engineers</li>
 
-                <li>UIUX Engineers</li>
+                <li>>  UIUX Engineers</li>
 
-                <li>DevOps Engineers</li>
+                <li>>  DevOps Engineers</li>
 
-                <li>Ember.Js Engineers</li>
+                <li>>  Ember.Js Engineers</li>
 
-                <li>Full Stack Engineers</li>
+                <li>>  Full Stack Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>Frontend Engineers</li>
+                <li>>  Frontend Engineers</li>
 
-                <li>Magento Engineers</li>
+                <li>>  Magento Engineers</li>
 
-                <li>Machine Learning Engineers</li>
+                <li>>  Machine Learning Engineers</li>
 
-                <li>Jquery Engineers</li>
+                <li>>  Jquery Engineers</li>
 
-                <li>React Native Engineers</li>
+                <li>>  React Native Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>.NET Engineers</li>
+                <li>>  NET Engineers</li>
 
-                <li>Node.JS Engineers</li>
+                <li>>  Node.JS Engineers</li>
 
-                <li>Backbone.JS Engineers</li>
+                <li>>  Backbone.JS Engineers</li>
 
-                <li>Web Engineers</li>
+                <li>>  Web Engineers</li>
 
-                <li>Ionic Engineers</li>
+                <li>>  Ionic Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>Python Engineers</li>
+                <li>>  Python Engineers</li>
 
-                <li>Salesforce Engineers</li>
+                <li>>  Salesforce Engineers</li>
 
-                <li>Software Engineers</li>
+                <li>>  Software Engineers</li>
 
-                <li>Scala Engineers</li>
+                <li>>  Scala Engineers</li>
 
-                <li>Kotlin Engineers</li>
-              </ul>
+                <li>>  Kotlin Engineers</li>
+              </ul> 
             </div>
           </div>
         </div>
@@ -452,7 +452,7 @@ export default {
           title: "Network With Professionals",
           text: "Showcase your capabilities, past projects, hands-on industry experience, and the leadership roles you displayed in a competitive assessment program designed for dynamic professionals just like you.",
           link: "",
-          cls: "success",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -462,7 +462,7 @@ export default {
           title: "In-Depth Assessment Program",
           text: "We not only match candidate qualifications to a job. Our team factors in your willingness to be a team player and your ability to step up to challenges so you can be at your best from day one.",
           link: "",
-          cls: "warning",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -472,7 +472,7 @@ export default {
           title: "Trusted, Personalized Matching",
           text: "You want to discover your true potential, we’ll make it happen. Get connected to exciting startups, growing SMBs, and world-class enterprises without any hassle. If one of our job posts interests you, contact us to match your skills and preferences.",
           link: "",
-          cls: "error",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -482,7 +482,7 @@ export default {
           title: "Define Your Own Terms",
           text: "We will never bother you with micro-management, red tape, and stringent terms. Remain in your comfort zone as you decide where, when, and how you want to work. All you need is a laptop, a fast and secure WiFi connection, and you’re ready to begin.",
           link: "",
-          cls: "primary",
+          cls: "Grey",
           flat: false,
         },
         {
@@ -492,7 +492,7 @@ export default {
           title: "On-Time Compensation",
           text: "You deserve a handsome, on-time paycheck that mirrors all the hard work you put into your job, and we make transform this into reality. We offer the best rates based on your experience, and our team takes care of the billing as well as invoicing.",
           link: "",
-          cls: "brown",
+          cls: "Grey",
           flat: false,
         },
       ],
