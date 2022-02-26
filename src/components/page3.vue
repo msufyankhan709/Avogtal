@@ -29,7 +29,7 @@
       </v-flex>
       <v-flex md5>
         <v-img
-          style="margin-top: 15%; margin-left: 30px; width: 75%"
+          style="margin-top: 15%; margin-left: 30px; width: 95%"
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/engineer-banner.png"
         ></v-img>
       </v-flex>
@@ -298,7 +298,7 @@
       </div>
       <v-flex md6
         ><v-img
-          style="margin-top: 5%; margin-left: 20%"
+          style="margin-top: 5%; margin-left: 20%;"
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/same-page.png"
         ></v-img
       ></v-flex>
@@ -505,44 +505,7 @@ export default {
 .user {
   margin-left: 100px;
 }
-/* From cssbuttons.io by @adamgiebl */
-.button {
-  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
-  background-size: 800% 400%;
-  padding: 1em 2em;
-  display: inline-block;
-  border: none;
-  border-radius: 10px;
-  font-size: 17px;
-  font-weight: 700;
-  color: white;
-  transition: all 0.5s ease-in-out;
-  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
-}
 
-.button:hover {
-  animation: gradient 3s infinite;
-  transform: scale(1.05);
-}
-
-.button:active {
-  animation: gradient 3s infinite;
-  transform: scale(0.8);
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .iduser {
   background-color: #e2dddd;
 }

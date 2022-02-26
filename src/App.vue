@@ -11,7 +11,6 @@
       <router-link
         :to="{ name: 'Engineers' }"
         class="links"
-       
         >For Engineers</router-link
       >
       <v-divider class="mx-4" vertical></v-divider>
@@ -58,6 +57,6 @@ export default Vue.extend({
 }
 .links:hover {
   font: 1em sans-serif;
-  box-shadow: 10px 11px 2px rgba(1, 2, 59, 0.63);
+  box-shadow: 10px 11px 2px rgba(26, 30, 228, 0.63);
 }
 </style>
