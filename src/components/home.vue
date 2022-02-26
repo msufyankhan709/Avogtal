@@ -472,7 +472,7 @@ export default {
           title: "Scalable Teams",
           text: "Whether you need a one person staff augmentation or a twenty person development army, we have you covered.",
           link: "",
-          cls: "white",
+          cls: "purple",
           flat: false,
         },
         {
@@ -592,6 +592,6 @@ ul {
   list-style-type: none;
 }
 .line {
-  margin-top: 15%;
+  margin-top: 22%;
 }
 </style>

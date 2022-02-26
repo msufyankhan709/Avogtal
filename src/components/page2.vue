@@ -93,11 +93,11 @@
         </v-timeline>
       </div>
       <v-flex md6>
-        <h3 style="margin-left: 15%; color: #cdc8c8; margin-top: 20%">
+        <h3 style="margin-left: 5%; color: #cdc8c8; margin-top: 20%">
           Technical & Cultural Fit
         </h3>
 
-        <h1 style="margin-left: 15%">Data-Driven Screening</h1>
+        <h1 style="margin-left: 5%">Data-Driven Screening</h1>
         <div class="text">
           <h2 style="color: blue">Share Your Requirements</h2>
           <h3>
@@ -212,7 +212,7 @@
       <v-flex style="background-color: #f1ebeb; margin-top: 10%;text-align: center">
         <section class="h-works">
           
-                <h3>Our Engineering Talent, Your Success</h3>
+                <h3 style="color: blue">Our Engineering Talent, Your Success</h3>
 
                 <p>Just tell us what you need, and we’ll do the hard work.</p>
         </section>
@@ -436,7 +436,7 @@ export default {
           title: "Scalable Teams",
           text: "Whether you need a one person staff augmentation or a twenty person development army, we have you covered.",
           link: "",
-          cls: "white",
+          cls: "purple",
           flat: false,
         },
         {
@@ -552,7 +552,7 @@ ul {
   list-style-type: none;
 }
 .line {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .h-works {
     padding: 80px 0;

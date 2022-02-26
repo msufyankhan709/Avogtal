@@ -4,23 +4,23 @@
       <v-flex md6 style="margin-top: 10%">
         <div class="user">
           <h1>
-            Onboard Top Engineering <br />
-            Talent In A Fraction Of The Time
+            Grow Your Career With The<br />
+            Best Global Companies
           </h1>
 
           <h3>
-            Promising Startups, Rising SMBs, And Top Enterprises Trust <br />
-            Avogtal To Deliver Real Results
+            Connect, Network, Get On Board With Innovative <br />
+            Brands, And Excel At Your Craft
           </h3>
-          <v-btn class="button" style="margin-top: 16%; margin-left: 50px">
+          <v-btn class="button" style="margin-top: 12%; margin-left: 50px">
             hire now
           </v-btn>
         </div>
       </v-flex>
       <v-flex md5>
         <v-img
-          style="margin-top: 15%; margin-left: 30px; width: 70%"
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/companies-banner.png"
+          style="margin-top: 15%; margin-left: 30px; width: 75%"
+          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/engineer-banner.png"
         ></v-img>
       </v-flex>
     </v-layout>
@@ -34,40 +34,16 @@
       ></v-flex>
     </v-layout>
     <v-divider class="mt-7"> </v-divider>
-    <v-layout class="btm">
-      <v-flex md6
-        ><v-img
-          style="margin-left: 25%"
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/company-wwd.png"
-        ></v-img
-      ></v-flex>
-
-      <v-flex md6>
-        <h3 style="margin-left: 15%; margin-top: 15%; color: #cdc8c8">
-          Talent Network
-        </h3>
-
-        <h1 style="margin-left: 15%; margin-top: 2%"></h1>
-        <div class="text">
-          <h4 style="margin-left: 15%; margin-top: 3%; color: #cdc8c8">
-            We know you have a business to run, so why focus on the
-            technicalities when <br />
-            you have us to help? Let us find the perfect tech sources for you at
-            the right time and price.
-          </h4>
-        </div>
-      </v-flex>
-    </v-layout>
     <h3 style="text-align: center; margin-top: 7%; color: #cdc8c8">
-      In-Depth Assessment Program
+      How It Works
     </h3>
-    <h1 style="text-align: center">Vetted Engineers</h1>
+    <h1 style="text-align: center">Talent Network</h1>
     <h4 style="text-align: center; color: #cdc8c8">
-      We not only match candidate qualifications to a job, but we also factor in
-      the willingness to be <br />
-      team players and their ability to step up to challenges so you access only
-      the very best from <br />
-      day one.
+      Everyone wants to show what they can contribute to their profession, and
+      we can help you do <br />
+      that. Participate in an assessment to match your qualifications and
+      skillsets with ideal, career- <br />
+      defining opportunities where you can make a difference.
     </h4>
     <v-layout row wrap justify-space-between justify-space-around>
       <v-flex v-for="card in cards" :key="card.id" md5 class="mt-5">
@@ -81,8 +57,8 @@
     <v-layout style="background-color: #f1ebeb" class="btm">
       <v-flex md6
         ><v-img
-          style="margin-top: 10%; margin-left: 30%"
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/company-dds.png"
+          style="margin-top: 2%; margin-left: 30%"
+          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/eng-wfa.png"
         ></v-img
       ></v-flex>
       <div class="line">
@@ -93,11 +69,11 @@
         </v-timeline>
       </div>
       <v-flex md6>
-        <h3 style="margin-left: 15%; color: #cdc8c8; margin-top: 20%">
+        <h3 style="margin-left: 15%; color: #cdc8c8; margin-top: 10%">
           Technical & Cultural Fit
         </h3>
 
-        <h1 style="margin-left: 15%">Data-Driven Screening</h1>
+        <h1 style="margin-left: 1%">Data-Driven Screening</h1>
         <div class="text">
           <h2 style="color: blue">Share Your Requirements</h2>
           <h3>
@@ -106,88 +82,12 @@
             unique tech needs, culture, and organizational values.
           </h3>
           <v-btn style="margin-top: 7%; margin-left: 15%" class="button"
-            >hire now</v-btn>
+            >hire now</v-btn
+          >
         </div>
       </v-flex>
     </v-layout>
-    <v-layout>
-      <v-flex>
-        <h2 style="text-align: center; color: #cdc8c8; margin-top: 7%">
-          What Makes Us Different?
-        </h2>
-        <h1 style="text-align: center">
-          As-Needed Vetted Engineers At Your Service
-        </h1>
-      </v-flex>
-    </v-layout>
-    <span class="span">
-      <v-container class="grey lighten-5">
-        <v-row no-gutters>
-          <v-col v-for="n in 3" :key="n">
-            <v-card>
-              <v-img
-                width="100px"
-                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/vatted.png"
-              ></v-img>
-              <v-card-title>Vetted Engineers</v-card-title>
-              <v-card-text>
-                <v-row class="mx-0">
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
 
-                  <div class="grey--text ms-4">4.5 (413)</div>
-                </v-row>
-
-                <div class="my-4 text-subtitle-1">$ • Italian, Cafe</div>
-
-                <div>
-                  Get access to experienced engineers who we have assessed and
-                  chosen just for you.
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row class="mb-6" no-gutters>
-          <v-col v-for="n in 3" :key="n">
-            <v-card class="pa-2" tile outlined>
-              <v-img
-                height="100px"
-                width="100px"
-                src="https://avogtal.com/wp-content/themes/avogtal/assets/images/scalable.png"
-              ></v-img>
-              <v-card-title>Scalable Teams</v-card-title>
-              <v-card-text>
-                <v-row class="mx-0">
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
-
-                  <div class="grey--text ms-4">4.5 (413)</div>
-                </v-row>
-
-                <div class="my-4 text-subtitle-1">$ • Italian, Cafe</div>
-
-                <div>
-                  Whether you need a one person staff augmentation or a twenty
-                  person development army, we have you covered.
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </span>
     <v-layout>
       <v-flex class="foter">
         <h3 style="color: green; margin-top: 5%">
@@ -266,29 +166,102 @@
         </div>
       </v-flex>
     </v-layout>
-    <v-layout>
-      <v-flex>
-        <h3 style="color: #a19a9a; margin-top: 6%; margin-left: 43%">
-          Testimonials
-        </h3>
-        <h1 style="margin-left: 35%">Hear From Our Clients</h1>
-        <v-img
-          style="width: 100px; margin-left: 43%"
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/Michelle-Duval.svg"
-        ></v-img>
-        <h4 style="margin-top: 2%; margin-left: 43%">Michelle Duval</h4>
-        <h6 style="margin-left: 40%">
-          Founder + CEO - Fingerprint for Success
-        </h6>
-        <p style="margin-top: 1%; margin-left: 30%">
-          Avogtal has proven to be our single reliable Software Development
-          <br />
-          Partner who has helped us scale up our platform from ground up. Their
-          <br />
-          development resources have been integral members of our team and
-          <br />
-          have contributed immensely in making this venture a success.
-        </p>
+    <v-layout class="btm">
+      <v-flex md6>
+        <div style="margin-top: 13%; margin-left: 10%" class="text">
+          <h1 style="color: blue">Extend Your Reach</h1>
+          <h3 style="color: #cdc8c8">
+            Whether you are a newcomer or senior, the possibilities are endless
+            when you connect to a global community of software engineering
+            talent like yourself. Network with peers, attend virtual events,
+            learn from industry leaders, level up your skills, and so much more.
+          </h3>
+          <v-btn style="margin-top: 7%; margin-left: 5%" class="button"
+            >hire now</v-btn
+          >
+        </div>
+      </v-flex>
+      <div class="line">
+        <v-timeline class="">
+          <v-timeline-item></v-timeline-item>
+          <v-timeline-item class="text-right"> </v-timeline-item>
+          <v-timeline-item></v-timeline-item>
+        </v-timeline>
+      </div>
+      <v-flex md6
+        ><v-img
+          style="margin-top: 5%; margin-left: 20%"
+          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/eng-eyr.png"
+        ></v-img
+      ></v-flex>
+    </v-layout>
+    <v-layout style="background-color: #f1ebeb" class="btm">
+      <v-flex md6
+        ><v-img
+          style="margin-top: 5%; margin-left: 30%"
+          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/eng-sfm.png"
+        ></v-img
+      ></v-flex>
+      <div class="line">
+        <v-timeline class="">
+          <v-timeline-item></v-timeline-item>
+          <v-timeline-item class="text-right"> </v-timeline-item>
+          <v-timeline-item></v-timeline-item>
+        </v-timeline>
+      </div>
+      <v-flex md6>
+        <div style="margin-top: 14%" class="text">
+          <h1 style="color: blue">Strive For Mastery</h1>
+          <h3 style="color: #cdc8c8">
+            The sky’s the limit as you take on opportunities that challenge you
+            to perform at your best. Implement the latest practices in software
+            engineering, participate in training sessions and mentorship
+            programs, and add to your technical expertise.
+          </h3>
+          <v-btn style="margin-top: 7%; margin-left: 15%" class="button"
+            >hire now</v-btn
+          >
+        </div>
+      </v-flex>
+    </v-layout>
+    <v-layout class="btm">
+      <v-flex md6>
+        <div style="margin-top: 13%; margin-left: 10%" class="text">
+          <h1 style="color: blue">Rewarding Career</h1>
+          <h3 style="color: #cdc8c8">
+            Your success is our success. Many exceptional engineers have started
+            and grown their careers with Avogtal. We drive you towards long-term
+            success with client projects that encourage you to learn and put
+            your skills to good use.
+          </h3>
+          <v-btn style="margin-top: 7%; margin-left: 5%" class="button"
+            >hire now</v-btn
+          >
+        </div>
+      </v-flex>
+      <div class="line">
+        <v-timeline class="">
+          <v-timeline-item></v-timeline-item>
+          <v-timeline-item class="text-right"> </v-timeline-item>
+          <v-timeline-item></v-timeline-item>
+        </v-timeline>
+      </div>
+      <v-flex md6
+        ><v-img
+          style="margin-top: 5%; margin-left: 20%"
+          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/same-page.png"
+        ></v-img
+      ></v-flex>
+    </v-layout>
+     <v-layout>
+      <v-flex style="background-color: #f1ebeb; margin-top: 10%;text-align: center">
+        <section class="h-works">
+          
+                <h3 style="color: blue">Your Career, Our Promise</h3>
+
+                <p>Don’t hesitate to join our talent network and grow your career.</p>
+        </section>
+                <v-btn  class="button">hire me</v-btn>
       </v-flex>
     </v-layout>
     <div class="text2">
@@ -415,16 +388,16 @@
 
 <script>
 export default {
-  name: "page2",
+  name: "page3",
   data() {
     return {
       cards: [
         {
           id: 0,
           image:
-            "https://avogtal.com/wp-content/themes/avogtal/assets/images/english-company.svg",
-          title: "English Proficiency",
-          text: "Rest assured that there will be no language barriers when it comes to basic and business English communication skills from your handpicked team of experts.",
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/network-professionals.svg",
+          title: "Network With Professionals",
+          text: "Showcase your capabilities, past projects, hands-on industry experience, and the leadership roles you displayed in a competitive assessment program designed for dynamic professionals just like you.",
           link: "",
           cls: "success",
           flat: false,
@@ -432,9 +405,9 @@ export default {
         {
           id: 1,
           image:
-            "https://avogtal.com/wp-content/themes/avogtal/assets/images/technical-company.svg",
-          title: "Technical Interview",
-          text: "lWe put candidates to the test with critical-thinking exercises that evaluate hands-on experience, communication, collaboration, and quick decision-making capabilities.",
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/in-depth.svg",
+          title: "In-Depth Assessment Program",
+          text: "We not only match candidate qualifications to a job. Our team factors in your willingness to be a team player and your ability to step up to challenges so you can be at your best from day one.",
           link: "",
           cls: "warning",
           flat: false,
@@ -442,9 +415,9 @@ export default {
         {
           id: 2,
           image:
-            "https://avogtal.com/wp-content/themes/avogtal/assets/images/coding-company.svg",
-          title: "Coding Aptitude",
-          text: "We conduct thorough coding tests that reflect the real-world experience of candidates so you can measure their performance and employ them for the right job.",
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/trusted-matching.svg",
+          title: "Trusted, Personalized Matching",
+          text: "You want to discover your true potential, we’ll make it happen. Get connected to exciting startups, growing SMBs, and world-class enterprises without any hassle. If one of our job posts interests you, contact us to match your skills and preferences.",
           link: "",
           cls: "error",
           flat: false,
@@ -452,11 +425,21 @@ export default {
         {
           id: 3,
           image:
-            "https://avogtal.com/wp-content/themes/avogtal/assets/images/talent-company.svg",
-          title: "Talent Calibration Sessions",
-          text: "We organize future-focused talent calibration sessions to provide you with candidates who can accelerate your software development projects without compromising.",
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/define-terms.svg",
+          title: "Define Your Own Terms",
+          text: "We will never bother you with micro-management, red tape, and stringent terms. Remain in your comfort zone as you decide where, when, and how you want to work. All you need is a laptop, a fast and secure WiFi connection, and you’re ready to begin.",
           link: "",
           cls: "primary",
+          flat: false,
+        },
+        {
+          id: 4,
+          image:
+            "https://avogtal.com/wp-content/themes/avogtal/assets/images/on-time.svg",
+          title: "On-Time Compensation",
+          text: "You deserve a handsome, on-time paycheck that mirrors all the hard work you put into your job, and we make transform this into reality. We offer the best rates based on your experience, and our team takes care of the billing as well as invoicing.",
+          link: "",
+          cls: "brown",
           flat: false,
         },
       ],
@@ -560,6 +543,10 @@ ul {
   list-style-type: none;
 }
 .line {
-  margin-top: 15%;
+  margin-top: 5%;
+}
+.h-works {
+    padding: 100px 0;
+    background: var(--color-bg);
 }
 </style>

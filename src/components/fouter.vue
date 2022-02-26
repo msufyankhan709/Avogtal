@@ -1,8 +1,8 @@
 <template>
 <div style="color: blue">
   <v-footer dark padless>
-    <v-card class="flex" flat tile>
-      <v-card-text >
+    <v-card dark class="purple6 footer" flat tile>
+      <v-card-text>
         <div class="text-right">
           <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
             <v-icon size="24px">
@@ -30,17 +30,17 @@
             /></a>
           </div>
             <div class="right d-flex justify-space-between justify-space-around;"
-             style="display: block">
+             style="display: block;">
               <div class="column">
                 <h3>HELP</h3>
 
                 <ul>
-                  <li class="hide"><a href="#">Help Center</a></li>
+                  <li class="hide"><a style="text-decoration: none;color: white" href="#">Help Center</a></li>
 
-                  <li><a href="https://avogtal.com/faqs">Client FAQs</a></li>
+                  <li><a style="text-decoration: none;color: white" href="https://avogtal.com/faqs">Client FAQs</a></li>
 
                   <li>
-                    <a href="https://avogtal.com/faqs">Freelancer FAQs</a>
+                    <a style="text-decoration: none;color: white" href="https://avogtal.com/faqs">Freelancer FAQs</a>
                   </li>
                 </ul>
               </div>
@@ -49,11 +49,11 @@
                 <h3>COMPANY</h3>
 
                 <ul>
-                  <li><a href="https://avogtal.com/about">About</a></li>
+                  <li><a style="text-decoration: none;color: white" href="https://avogtal.com/about">About</a></li>
 
-                  <li class="hide"><a href="#">Team</a></li>
+                  <li class="hide"><a style="text-decoration: none;color: white" href="#">Team</a></li>
 
-                  <li class="hide"><a href="#">Press</a></li>
+                  <li class="hide"><a style="text-decoration: none;color: white" href="#">Press</a></li>
                 </ul>
               </div>
 
@@ -61,10 +61,10 @@
                 <h3>CONNECT</h3>
 
                 <ul>
-                  <li><a href="https://avogtal.com/blogs">Blog</a></li>
+                  <li><a style="text-decoration: none;color: white" href="https://avogtal.com/blogs">Blog</a></li>
 
                   <li>
-                    <a href="#" class="contact-modal-toggle"> Contact Us</a>
+                    <a style="text-decoration: none;color: white" href="#" class="contact-modal-toggle"> Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -73,7 +73,7 @@
         <v-spacer></v-spacer>
       </v-card-text>
    <v-divider style="color: white" class="mt-16 "></v-divider>
-     <h6 style="color: white;text-align:center">Copyright © Avogtal 2021 | All Rights Reserved.</h6>
+     <h6 style="color: white;text-align:center;margin-top: 5%">Copyright © Avogtal 2021 | All Rights Reserved.</h6>
     </v-card>
   </v-footer>
   </div>
@@ -102,5 +102,8 @@ body {
   width: 40%;
   display: flex;
   margin-top: 2%;
+}
+.footer{
+  width: 100%;
 }
 </style>
