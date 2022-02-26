@@ -12,9 +12,19 @@
             Connect, Network, Get On Board With Innovative <br />
             Brands, And Excel At Your Craft
           </h3>
-          <v-btn class="button" style="margin-top: 12%; margin-left: 50px">
-            hire now
-          </v-btn>
+          <span>
+            <v-btn
+              style="
+                background-color: blue;
+                margin-top: 10%;
+                width: 35%;
+                height: 20%;
+              "
+            >
+              <p style="margin-top: 15px; color: white">Get Started</p>
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
       <v-flex md5>
@@ -81,9 +91,19 @@
             professional profiles, we check if they are a good match for your
             unique tech needs, culture, and organizational values.
           </h3>
-          <v-btn style="margin-top: 7%; margin-left: 15%" class="button"
-            >hire now</v-btn
-          >
+          <span>
+            <v-btn
+              style="
+                background-color: blue;
+                margin-top: 5%;
+                width: 35%;
+                height: 20%;
+              "
+            >
+              <p style="margin-top: 15px; color: white">Get Started</p>
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
     </v-layout>
@@ -176,9 +196,19 @@
             talent like yourself. Network with peers, attend virtual events,
             learn from industry leaders, level up your skills, and so much more.
           </h3>
-          <v-btn style="margin-top: 7%; margin-left: 5%" class="button"
-            >hire now</v-btn
-          >
+          <span>
+            <v-btn
+              style="
+                background-color: blue;
+                margin-top: 5%;
+                width: 35%;
+                height: 20%;
+              "
+            >
+              <p style="margin-top: 15px; color: white">Get Started</p>
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
       <div class="line">
@@ -218,9 +248,19 @@
             engineering, participate in training sessions and mentorship
             programs, and add to your technical expertise.
           </h3>
-          <v-btn style="margin-top: 7%; margin-left: 15%" class="button"
-            >hire now</v-btn
-          >
+          <span>
+            <v-btn
+              style="
+                background-color: blue;
+                margin-top: 5%;
+                width: 35%;
+                height: 20%;
+              "
+            >
+              <p style="margin-top: 15px; color: white">Get Started</p>
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
     </v-layout>
@@ -234,9 +274,19 @@
             success with client projects that encourage you to learn and put
             your skills to good use.
           </h3>
-          <v-btn style="margin-top: 7%; margin-left: 5%" class="button"
-            >hire now</v-btn
-          >
+          <span>
+            <v-btn
+              style="
+                background-color: blue;
+                margin-top: 5%;
+                width: 35%;
+                height: 20%;
+              "
+            >
+              <p style="margin-top: 15px; color: white">Get Started</p>
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
       <div class="line">
@@ -253,15 +303,18 @@
         ></v-img
       ></v-flex>
     </v-layout>
-     <v-layout>
-      <v-flex style="background-color: #f1ebeb; margin-top: 10%;text-align: center">
+    <v-layout style="background-color: #e2dddd">
+      <v-flex style="text-align: center">
         <section class="h-works">
-          
-                <h3 style="color: blue">Your Career, Our Promise</h3>
+          <h3 style="color: blue">Your Career, Our Promise</h3>
 
-                <p>Don’t hesitate to join our talent network and grow your career.</p>
+          <p>Don’t hesitate to join our talent network and grow your career.</p>
         </section>
-                <v-btn  class="button">hire now</v-btn>
+
+        <v-btn class="mt-n16 blue white--text" large>
+          Get Started
+          <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+        </v-btn>
       </v-flex>
     </v-layout>
     <div class="text2">
@@ -546,7 +599,7 @@ ul {
   margin-top: 5%;
 }
 .h-works {
-    padding: 100px 0;
-    background: var(--color-bg);
+  padding: 100px 0;
+  background: var(--color-bg);
 }
 </style>

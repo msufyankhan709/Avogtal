@@ -12,9 +12,12 @@
             Promising Startups, Rising SMBs, And Top Enterprises Trust <br />
             Avogtal To Deliver Real Results
           </h3>
-          <v-btn class="button" style="margin-top: 16%; margin-left: 50px">
-            hire now
+           <span>
+          <v-btn style="background-color: blue;margin-top: 10%;width: 35%;height: 20% " >
+           <p style="margin-top: 15px;color:white">hire now</p> 
+            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
           </v-btn>
+        </span>
         </div>
       </v-flex>
       <v-flex md5>
@@ -105,9 +108,12 @@
             professional profiles, we check if they are a good match for your
             unique tech needs, culture, and organizational values.
           </h3>
-          <v-btn style="margin-top: 7%; margin-left: 15%" class="button"
-            >hire now</v-btn
-          >
+          <span>
+          <v-btn style="background-color: blue;margin-top: 5%;width: 35%;height: 20% " >
+           <p style="margin-top: 15px;color:white">hire now</p> 
+            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </span>
         </div>
       </v-flex>
     </v-layout>
@@ -209,14 +215,19 @@
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex style=" margin-top: 10%;text-align: center">
+      <v-flex style="background-color: #f1ebeb; margin-top: 10%;text-align: center">
         <section class="h-works">
           
                 <h3 style="color: blue">Our Engineering Talent, Your Success</h3>
 
                 <p>Just tell us what you need, and we’ll do the hard work.</p>
         </section>
-                <v-btn  class="button">hire now</v-btn>
+              <span>
+          <v-btn class="mt-n16" style="background-color: blue;width: 15%;height: 20% " >
+           <p style="margin-top: 15px;color:white">hire talent</p> 
+            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </span>
       </v-flex>
     </v-layout>
     <div class="text2">

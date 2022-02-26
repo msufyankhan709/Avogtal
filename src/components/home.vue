@@ -9,14 +9,17 @@
             We are the development partner of choice for over 300 <br />
             clients.
           </h3>
-          <v-btn class="button" style="margin-top: 16%; margin-left: 50px">
-            hire now
+        <span>
+          <v-btn style="background-color: blue;margin-top: 10%;width: 35%;height: 20% " >
+           <p style="margin-top: 15px;color:white">hire now</p> 
+            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
           </v-btn>
+        </span>
         </div>
       </v-flex>
-      <v-flex md5>
+      <v-flex>
         <v-img
-          style="margin-top: 70px; margin-left: 30px"
+          style="margin-top: 70px; margin-left: 30px;width:80%"
           src="@/assets/app.png"
         ></v-img>
       </v-flex>
@@ -168,9 +171,12 @@
             Vet the candidates with us to find the best cultural and technical
             fit for your organization.
           </h3>
-          <v-btn style="margin-top: 7%; margin-left: 15%" class="button"
-            >hire now</v-btn
-          >
+         <span>
+          <v-btn style="background-color: blue;margin-top: 5%;width: 35%;height: 20% ">
+           <p style="margin-top: 15px;color:white">hire now</p> 
+            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </span>
         </div>
       </v-flex>
     </v-layout>
@@ -430,7 +436,7 @@ export default {
           image:
             "https://avogtal.com/wp-content/themes/avogtal/assets/images/vatted.png",
           title: "Vetted Engineers",
-          text: "Get access to experienced engineers who we have assessed and chosen just for you.",
+          text: "Get access to experienced engineers who we have assessed and chosen just for you ensure the best fit for you..",
           link: "",
           cls: "success",
           flat: false,
@@ -496,7 +502,7 @@ export default {
   margin-left: 100px;
 }
 /* From cssbuttons.io by @adamgiebl */
-.button {
+/* .button {
   background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
   background-size: 800% 400%;
   padding: 1em 2em;
@@ -532,6 +538,20 @@ export default {
   100% {
     background-position: 0% 50%;
   }
+} */
+.button {
+    width: max-content;
+    display: inline-block;
+    background: blue;
+    border-radius: 4px;
+    padding: 15px 30px;
+    color: white
+    font-style normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
 }
 .iduser {
   max-height: 100%;

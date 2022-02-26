@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="blue" dark fixed>
+    <v-app-bar color="white" dark fixed>
       <router-link :to="{ name: 'Home' }">
         <v-img
           style="max-width: 180px; margin-left: 1%"
@@ -11,21 +11,26 @@
       <router-link
         :to="{ name: 'Engineers' }"
         class="links"
+       
         >For Engineers</router-link
       >
       <v-divider class="mx-4" vertical></v-divider>
       <router-link
         :to="{name:'Companies'}"
         class="links"
+        style="margin-right: 30%"
         >For Companies</router-link
       >
       <v-spacer></v-spacer>
-        <v-btn text> Hire Talent </v-btn>
-        <v-divider vertical></v-divider>
-        <v-btn text> Find Work </v-btn>
-        <v-divider vertical></v-divider>
-        <v-divider vertical></v-divider>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+     <router-link
+        :to="{name:'Companies'}"
+        class="links"
+        >Hire Talent</router-link>
+ <router-link
+        :to="{name:'Companies'}"
+        class="links"
+        >Find Work</router-link>
+
     </v-app-bar>
     <v-main>
       <router-view />
@@ -49,7 +54,7 @@ export default Vue.extend({
   padding: 10px;
   margin: 1%;
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(29, 2, 2);
 }
 .links:hover {
   font: 1em sans-serif;
