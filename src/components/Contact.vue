@@ -1,10 +1,11 @@
 <template>
   <div>
-    <v-layout class="modal" justify-space-around>
-      <v-flex md6>
+    <v-layout md12>
+      <v-spacer></v-spacer>
+      <v-flex md5 xs12>
         <v-img src="@/assets/dialog.png"> </v-img>
       </v-flex>
-      <v-flex md6 class="darkNavy">
+      <v-flex md5 class="purple6">
         <div>
           <br />
           <p

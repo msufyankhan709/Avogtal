@@ -22,8 +22,8 @@
       </div>
 
       <v-spacer></v-spacer>
-      <v-btn dark :ripple="false" @click="contactUs" text plain>
-        Contact us
+      <v-btn dark :ripple="false" @click="HireTalent" text plain>
+        Hire Talent
       </v-btn>
       <v-btn dark :ripple="false" @click="findWork" text plain>
         Find Work
@@ -85,7 +85,7 @@ export default Vue.extend({
     show2nd: false,
   }),
   methods: {
-    contactUs() {
+    HireTalent() {
       this.dialog = true;
       this.show2nd = false;
     },

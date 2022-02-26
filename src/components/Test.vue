@@ -1,10 +1,12 @@
 <template>
   <div>
-    <v-layout>
-      <v-flex md6>
+    <v-layout md12>
+      <v-spacer></v-spacer>
+      <v-flex md5 xs12>
         <v-img src="@/assets/work.png"> </v-img>
       </v-flex>
-      <v-flex md5 class="blue">
+      <br/>
+      <v-flex md5 class="purple6">
         <div>
           <br />
           <p class="text-h4 font-weight-bold white--text text-center">
@@ -103,6 +105,7 @@
           </v-btn>
         </v-row>
       </v-flex>
+      <v-spacer> </v-spacer>
     </v-layout>
   </div>
 </template>
@@ -124,11 +127,7 @@ export default {
         "Mobile/Web Developer",
         "IT Project Manager",
       ],
-      options: [
-        "Begineer",
-        "Intermediate",
-        "Advanced", 
-      ],
+      options: ["Begineer", "Intermediate", "Advanced"],
     };
   },
 };
