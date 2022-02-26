@@ -11,13 +11,13 @@
       <router-link
         :to="{ name: 'Companies' }"
         class="links"
-        >For Companies</router-link
+        >For Engineers</router-link
       >
       <v-divider class="mx-4" vertical></v-divider>
       <router-link
         :to="{name:'Engineers'}"
         class="links"
-        >For Engineers</router-link
+        >For Companies</router-link
       >
       <v-spacer></v-spacer>
         <v-btn text> Hire Talent </v-btn>
