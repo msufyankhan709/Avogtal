@@ -261,7 +261,7 @@
 
                 <p>Don’t hesitate to join our talent network and grow your career.</p>
         </section>
-                <v-btn  class="button">hire me</v-btn>
+                <v-btn  class="button">hire now</v-btn>
       </v-flex>
     </v-layout>
     <div class="text2">

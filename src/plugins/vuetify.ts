@@ -15,7 +15,7 @@ const myOptions = {
             purple2:'#A788DD',
             purple3:'#845DC9',
             purple4:'#6A40B4',
-            purple6:'#5224A1',
+            footerBg:'#081237',
             Grey:'#E9E9E9',
             lightGrey:'#F7F7F9',
             DarkGrey:'#A8A8A8',

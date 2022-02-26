@@ -209,14 +209,14 @@
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex style="background-color: #f1ebeb; margin-top: 10%;text-align: center">
+      <v-flex style=" margin-top: 10%;text-align: center">
         <section class="h-works">
           
                 <h3 style="color: blue">Our Engineering Talent, Your Success</h3>
 
                 <p>Just tell us what you need, and we’ll do the hard work.</p>
         </section>
-                <v-btn  class="button">hire me</v-btn>
+                <v-btn  class="button">hire now</v-btn>
       </v-flex>
     </v-layout>
     <div class="text2">

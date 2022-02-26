@@ -9,13 +9,13 @@
       </router-link>
       <v-spacer></v-spacer>
       <router-link
-        :to="{ name: 'Companies' }"
+        :to="{ name: 'Engineers' }"
         class="links"
         >For Engineers</router-link
       >
       <v-divider class="mx-4" vertical></v-divider>
       <router-link
-        :to="{name:'Engineers'}"
+        :to="{name:'Companies'}"
         class="links"
         >For Companies</router-link
       >

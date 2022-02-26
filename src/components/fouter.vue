@@ -1,7 +1,7 @@
 <template>
 <div style="color: blue">
   <v-footer dark padless>
-    <v-card dark class="purple6 footer" flat tile>
+    <v-card dark class="footerBg footer" flat tile>
       <v-card-text>
         <div class="text-right">
           <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
