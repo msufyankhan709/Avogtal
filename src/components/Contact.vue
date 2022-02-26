@@ -7,12 +7,9 @@
       <v-flex md6 class="blue">
         <div>
           <br />
-          <p>
-            <span
-              class="text-h4 font-weight-bold white--text"
-              style="margin-left: 170px"
-              >Hire Talent</span
-            >
+          <p
+          class="text-center text-md-h4 font-weight-bold white--text"
+              >Hire Talent
           </p>
         </div>
         <v-row class="mt-6">
@@ -75,6 +72,7 @@
           <v-btn
             class="mt-n4"
             depressed
+            dialog.value="false"
             style="margin-left: 10%"
             color="font-weight-bold myClass white--text"
             large
@@ -91,9 +89,12 @@
 <script>
 export default {
   name: "Conntect",
-
+  props: {
+    dialog: Object,
+  },
   data() {
     return {
+      checkbox: false,
       option: [
         "Front-End Engineers",
         "Back-End Engineers",

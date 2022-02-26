@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -26,48 +22,77 @@
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-btn dark :ripple="false" @click="contactUs" text plain>
+        Contact us
       </v-btn>
+      <v-btn dark :ripple="false" @click="findWork" text plain>
+        Find Work
+      </v-btn>
+      <v-dialog
+        transition="dialog-bottom-transition"
+        fullscreen
+        v-model="dialog"
+      >
+        <template v-slot:default>
+          <v-card>
+            <v-row>
+              <v-col cols="12" class="text-right">
+                <v-btn text fab @click="dialog = false">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn></v-col
+              >
+            </v-row>
+            <v-row v-if="!show2nd">
+              <v-col>
+                <contact />
+              </v-col>
+            </v-row>
+          <v-row v-else>
+            <v-col>
+              <work />
+            </v-col>
+          </v-row>
+          </v-card>
+        </template>
+      </v-dialog>
     </v-app-bar>
-   
 
-        <v-main>
-           <Home />
-            <work />
-            <contact /> 
-           
-      <router-view/>
+    <v-main>
+      <Home />
+
+      <router-view />
     </v-main>
   </v-app>
-
 </template>
 <script lang="ts">
-
-import Vue from 'vue'; 
-import Home from './views/Home.vue';
-import work from './components/work.vue'
-import Contact from './components/Contact.vue';
+import Vue from "vue";
+import Home from "./views/Home.vue";
+import work from "./components/Test.vue";
+import Contact from "./components/Contact.vue";
 
 export default Vue.extend({
-  name: 'App',
-components: {
-  Home,
-   work,
-   
-Contact,
+  name: "App",
+  components: {
+    Home,
+    work,
 
-  
-},
+    Contact,
+  },
 
   data: () => ({
     //
+    dialog: false,
+    show2nd: false,
   }),
+  methods: {
+    contactUs() {
+      this.dialog = true;
+      this.show2nd = false;
+    },
+    findWork() {
+      this.dialog = true;
+      this.show2nd = true;
+    },
+  },
 });
 </script>
