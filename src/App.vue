@@ -40,7 +40,9 @@
 
         <v-main>
            <Home />
-           <Contact />
+            <work />
+            <contact /> 
+           
       <router-view/>
     </v-main>
   </v-app>
@@ -50,13 +52,17 @@
 
 import Vue from 'vue'; 
 import Home from './views/Home.vue';
-import Contact from './components/Contact.vue'
+import work from './components/work.vue'
+import Contact from './components/Contact.vue';
 
 export default Vue.extend({
   name: 'App',
 components: {
   Home,
-  Contact,
+   work,
+   
+Contact,
+
   
 },
 

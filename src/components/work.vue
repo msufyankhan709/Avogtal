@@ -2,14 +2,14 @@
   <div>
     <v-layout class="modal" justify-space-around>
       <v-flex md6>
-        <v-img src="@/assets/dialog.png"> </v-img>
+        <v-img src="@/assets/work.png"> </v-img>
       </v-flex>
       <v-flex md6 class="blue">
         <div>
           <br />
           <p>
             <span class="text-h4 font-weight-bold white--text" style="margin-left: 170px"
-              >Hire Talent</span
+              >Want To Join The Best Talent Network? Apply Here!</span
             >
           </p>
         </div>
@@ -31,6 +31,21 @@
               outlined
               style="width: 210px"
             ></v-text-field>
+            
+      <v-col
+        class="d-flex"
+      >
+        <v-select
+          :items="items"
+          label="Outlined style"
+          outlined
+        ></v-select>
+      </v-col>
+             <v-text-field dark
+              label="Email Address"
+              outlined
+              style="width: 210px"
+            ></v-text-field>
           </v-col>
 
           <v-col cols="5">
@@ -45,13 +60,13 @@
               style="width: 210px"
             ></v-text-field>
             <v-text-field dark
-              label="Job Title"
+              label="CV (Public link on Google Drive, etc"
               outlined
               style="width: 210px"
             ></v-text-field>
           </v-col>
           <v-spacer></v-spacer>
-          <v-col style="margin-left: 8%" class="mt-n8" cols="10">
+          <v-col style="margin-left: 46%" class="mt-n8" cols="6">
             <p class="white--text">What Role Are You Looking To Hire?</p>
             <v-select dark
               :items="option"
@@ -59,6 +74,11 @@
               dense
               outlined
             ></v-select>
+             <v-text-field dark
+              label="Reference Email"
+              outlined
+              style="width: 210px"
+            ></v-text-field>
             <p class="white--text">Talent Requirements</p>
             <v-textarea dark outlined dense label="Write Something"> </v-textarea>
           </v-col>
