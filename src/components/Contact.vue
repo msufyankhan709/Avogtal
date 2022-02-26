@@ -4,7 +4,7 @@
       <v-flex md6>
         <v-img src="@/assets/dialog.png"> </v-img>
       </v-flex>
-      <v-flex md6 class="blue">
+      <v-flex md6 class="darkNavy">
         <div>
           <br />
           <p
@@ -74,7 +74,7 @@
             depressed
             dialog.value="false"
             style="margin-left: 10%"
-            color="font-weight-bold myClass white--text"
+            color="font-weight-bold lightGrey black--text"
             large
           >
             Submit
@@ -108,8 +108,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.modal {
-  max-width: 86%;
-  margin-left: 7%;
-}
+
 </style>

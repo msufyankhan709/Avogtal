@@ -1,15 +1,14 @@
 <template>
   <div>
-    <v-layout class="modal" justify-space-around>
+    <v-layout>
       <v-flex md6>
         <v-img src="@/assets/work.png"> </v-img>
       </v-flex>
-      <v-flex md6 class="blue">
+      <v-flex md5 class="blue">
         <div>
           <br />
-          <p
-              class="text-h4 font-weight-bold white--text text-center"
-              >Want To Join The Best Talent Network? Apply Here!
+          <p class="text-h4 font-weight-bold white--text text-center">
+            Want To Join The Best Talent Network? Apply Here!
           </p>
         </div>
         <v-row class="mt-6">
@@ -37,7 +36,7 @@
               dark
               label="Level of Experities"
               outlined
-              :items="option"
+              :items="options"
               style="width: 210px"
             >
             </v-select>
@@ -96,7 +95,7 @@
             class="mt-n4"
             depressed
             style="margin-left: 10%"
-            color="font-weight-bold myClass white--text"
+            color="font-weight-bold lightGrey black--text"
             large
           >
             Submit
@@ -119,15 +118,16 @@ export default {
         "Front-End Engineers",
         "Back-End Engineers",
         "Full Stack Engineers",
+        "QA",
         "DevOps Engineers",
         "UI/UX Engineers",
+        "Mobile/Web Developer",
+        "IT Project Manager",
       ],
-      option: [
-        "Front-End Engineers",
-        "Back-End Engineers",
-        "Full Stack Engineers",
-        "DevOps Engineers",
-        "UI/UX Engineers",
+      options: [
+        "Begineer",
+        "Intermediate",
+        "Advanced", 
       ],
     };
   },
@@ -135,8 +135,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.modal {
-  max-width: 86%;
-  margin-left: 7%;
-}
 </style>
