@@ -1,19 +1,17 @@
 <template>
   <div>
     <home />
-    <fouter />
+    <footer />
   </div>
 </template>
-
 <script>
-import home from "@/components/home.vue";
-import fouter from "@/components/fouter.vue";
-
-export default {
-  name: "vapp",
+import Footer from '../components/Footer.vue';
+import Conntect from '../components/conntect.vue';
+export default{
+  name: 'Home',
   components: {
     home,
-    fouter,
+    Footer,
   },
 };
 </script>
