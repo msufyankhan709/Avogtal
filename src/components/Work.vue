@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-layout md12>
+    <v-layout md7>
       <v-spacer></v-spacer>
-      <v-flex md5 xs12>
+      <v-flex md5 xs10>
         <v-img src="@/assets/work.png"> </v-img>
       </v-flex>
       <br/>

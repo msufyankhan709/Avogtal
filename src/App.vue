@@ -61,7 +61,7 @@
 <script lang="ts">
 import Vue from "vue";
 import Contact from "@/components/Contact.vue";
-import Work from "@/components/Work.vue";
+import Work from "../src/components/Work.vue";
 export default Vue.extend({
   name: "App",
   components: {
