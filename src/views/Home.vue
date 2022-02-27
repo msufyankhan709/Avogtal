@@ -1,14 +1,14 @@
 <template>
   <div>
     <home />
-    <footer />
+    <Footer />
   </div>
 </template>
 <script>
-import Footer from '../components/Footer.vue';
-import Conntect from '../components/conntect.vue';
-export default{
-  name: 'Home',
+import home from "../components/home.vue";
+import Footer from "../components/Footer.vue";
+export default {
+  name: "Home",
   components: {
     home,
     Footer,

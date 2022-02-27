@@ -19,16 +19,10 @@
         >For Companies</router-link
       >
       <v-spacer></v-spacer>
-      <router-link :to="{ name: 'Companies' }" class="links"
-        >Hire Talent</router-link
-      >
-      <router-link :to="{ name: 'Companies' }" class="links"
-        >Find Work</router-link
-      >
-      <v-btn dark :ripple="false" @click="HireTalent" text plain>
+      <v-btn class="black--text" :ripple="false" @click="HireTalent" text plain>
         Hire Talent
       </v-btn>
-      <v-btn dark :ripple="false" @click="findWork" text plain>
+      <v-btn class="black--text" :ripple="false" @click="findWork" text plain>
         Find Work
       </v-btn>
       <v-dialog
@@ -47,7 +41,7 @@
             </v-row>
             <v-row v-if="!show2nd">
               <v-col>
-                <contact />
+                <Contact />
               </v-col>
             </v-row>
             <v-row v-else>
@@ -66,9 +60,14 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
+import Contact from "../src/components/Contact.vue";
+import work from "../src/components/Test.vue";
 export default Vue.extend({
   name: "App",
-  components: {},
+  components: {
+    Contact,
+    work
+  },
 
   data: () => ({
     //

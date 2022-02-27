@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import fouter from "@/components/fouter.vue";
+import fouter from "@/components/Footer.vue";
 import page2 from "@/components/page2.vue";
 export default {
   name: "vapp",

@@ -1,17 +1,17 @@
 <template>
   <div>
     <page-3 />
-    <fouter />
+    <Footer />
   </div>
 </template>
 
 <script>
-import fouter from "@/components/fouter.vue";
+import Footer from "@/components/Footer.vue";
 import page3 from "@/components/page3.vue";
 export default {
   name: "vapp",
   components: {
-    fouter,
+    Footer,
     page3,
   },
 };
