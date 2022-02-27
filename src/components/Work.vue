@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-layout md7>
+    <v-layout md-7 ml-12 >
       <v-spacer></v-spacer>
       <v-flex md5 xs10>
         <v-img src="@/assets/work.png"> </v-img>

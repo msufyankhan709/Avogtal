@@ -12,12 +12,12 @@
             Promising Startups, Rising SMBs, And Top Enterprises Trust <br />
             Avogtal To Deliver Real Results
           </h3>
-           <span>
-          <v-btn style="background-color: blue;margin-top: 10%;width: 35%;height: 20% " >
-           <p style="margin-top: 15px;color:white">hire now</p> 
-            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
+          <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
       <v-flex md5>
@@ -109,11 +109,11 @@
             unique tech needs, culture, and organizational values.
           </h3>
           <span>
-          <v-btn style="background-color: blue;margin-top: 5%;width: 35%;height: 20% " >
-           <p style="margin-top: 15px;color:white">hire now</p> 
-            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
     </v-layout>
@@ -222,12 +222,12 @@
 
                 <p>Just tell us what you need, and we’ll do the hard work.</p>
         </section>
-              <span>
-          <v-btn class="mt-n16" style="background-color: blue;width: 15%;height: 20% " >
-           <p style="margin-top: 15px;color:white">hire talent</p> 
-            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
+             <span>
+            <v-btn @click="HireTalent" class="mt-n16 pa-5 btnClass white--text">
+              hire now
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
       </v-flex>
     </v-layout>
     <div class="text2">
@@ -348,15 +348,42 @@
           </div>
         </div>
       </section>
+       <v-dialog
+        transition="dialog-bottom-transition"
+        fullscreen
+        v-model="dialog"
+      >
+        <template v-slot:default>
+          <v-card>
+            <v-row>
+              <v-col cols="12" class="text-right">
+                <v-btn text fab @click="dialog = false">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn></v-col
+              >
+            </v-row>
+            <v-row>
+              <v-col>
+                <Work />
+              </v-col>
+            </v-row>
+          </v-card>
+        </template>
+      </v-dialog>
     </div>
   </div>
 </template>
 
 <script>
+import Work from "./Work.vue";
 export default {
   name: "page2",
+   components: {
+    Work,
+  },
   data() {
     return {
+            dialog: false,
       cards: [
         {
           id: 0,
@@ -464,6 +491,12 @@ export default {
       test: "",
       num: 0,
     };
+  },
+   methods: {
+    HireTalent() {
+      this.dialog = true;
+      this.show2nd = false;
+    },
   },
 };
 </script>

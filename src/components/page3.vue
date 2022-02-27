@@ -12,16 +12,9 @@
             Connect, Network, Get On Board With Innovative <br />
             Brands, And Excel At Your Craft
           </h3>
-          <span>
-            <v-btn
-              style="
-                background-color: blue;
-                margin-top: 10%;
-                width: 35%;
-                height: 20%;
-              "
-            >
-              <p style="margin-top: 15px; color: white">Get Started</p>
+           <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
               <v-icon style="color: white" small>mdi-arrow-right</v-icon>
             </v-btn>
           </span>
@@ -91,16 +84,9 @@
             professional profiles, we check if they are a good match for your
             unique tech needs, culture, and organizational values.
           </h3>
-          <span>
-            <v-btn
-              style="
-                background-color: blue;
-                margin-top: 5%;
-                width: 35%;
-                height: 20%;
-              "
-            >
-              <p style="margin-top: 15px; color: white">Get Started</p>
+           <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
               <v-icon style="color: white" small>mdi-arrow-right</v-icon>
             </v-btn>
           </span>
@@ -196,16 +182,9 @@
             talent like yourself. Network with peers, attend virtual events,
             learn from industry leaders, level up your skills, and so much more.
           </h3>
-          <span>
-            <v-btn
-              style="
-                background-color: blue;
-                margin-top: 5%;
-                width: 35%;
-                height: 20%;
-              "
-            >
-              <p style="margin-top: 15px; color: white">Get Started</p>
+           <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
               <v-icon style="color: white" small>mdi-arrow-right</v-icon>
             </v-btn>
           </span>
@@ -248,16 +227,9 @@
             engineering, participate in training sessions and mentorship
             programs, and add to your technical expertise.
           </h3>
-          <span>
-            <v-btn
-              style="
-                background-color: blue;
-                margin-top: 5%;
-                width: 35%;
-                height: 20%;
-              "
-            >
-              <p style="margin-top: 15px; color: white">Get Started</p>
+           <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
               <v-icon style="color: white" small>mdi-arrow-right</v-icon>
             </v-btn>
           </span>
@@ -274,16 +246,9 @@
             success with client projects that encourage you to learn and put
             your skills to good use.
           </h3>
-          <span>
-            <v-btn
-              style="
-                background-color: blue;
-                margin-top: 5%;
-                width: 35%;
-                height: 20%;
-              "
-            >
-              <p style="margin-top: 15px; color: white">Get Started</p>
+           <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
               <v-icon style="color: white" small>mdi-arrow-right</v-icon>
             </v-btn>
           </span>
@@ -311,10 +276,12 @@
           <p>Don’t hesitate to join our talent network and grow your career.</p>
         </section>
 
-        <v-btn class="mt-n16 blue white--text" large>
-          Get Started
-          <v-icon style="color: white" small>mdi-arrow-right</v-icon>
-        </v-btn>
+          <span>
+            <v-btn @click="HireTalent" class="mt-n16 pa-5 btnClass white--text">
+              hire now
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
       </v-flex>
     </v-layout>
     <div class="text2">
@@ -435,15 +402,42 @@
           </div>
         </div>
       </section>
+       <v-dialog
+        transition="dialog-bottom-transition"
+        fullscreen
+        v-model="dialog"
+      >
+        <template v-slot:default>
+          <v-card>
+            <v-row>
+              <v-col cols="12" class="text-right">
+                <v-btn text fab @click="dialog = false">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn></v-col
+              >
+            </v-row>
+            <v-row>
+              <v-col>
+                <Work />
+              </v-col>
+            </v-row>
+          </v-card>
+        </template>
+      </v-dialog>
     </div>
   </div>
 </template>
 
 <script>
+import Work from "./Work.vue";
 export default {
   name: "page3",
+   components: {
+    Work,
+  },
   data() {
     return {
+          dialog: false,
       cards: [
         {
           id: 0,
@@ -497,6 +491,12 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    HireTalent() {
+      this.dialog = true;
+      this.show2nd = false;
+    },
   },
 };
 </script>

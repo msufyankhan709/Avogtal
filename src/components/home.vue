@@ -9,23 +9,25 @@
             We are the development partner of choice for over 300 <br />
             clients.
           </h3>
-        <span>
-          <v-btn style="background-color: blue;margin-top: 10%;width: 35%;height: 20% " >
-           <p style="margin-top: 15px;color:white">hire now</p> 
-            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
+          <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
       <v-flex>
         <v-img
-          style="margin-top: 70px; margin-left: 30px;width:80%"
+          style="margin-top: 70px; margin-left: 30px; width: 80%"
           src="@/assets/app.png"
         ></v-img>
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex md1 class="ml-6"><h3 class="mt-5 blue--text">trusted by:</h3></v-flex>
+      <v-flex md1 class="ml-6"
+        ><h3 class="mt-5 blue--text">trusted by:</h3></v-flex
+      >
       <v-flex md2
         ><v-img
           style="width: 200px; margin-left: 10%"
@@ -50,14 +52,13 @@
       What We Offer
     </h3>
     <h1 style="text-align: center">Talent You Can Hire</h1>
-    <v-layout>
-      <a
-        href="#"
-        class="iduser"
+    <v-layout justify-center align-center justify-space-around justify-space-between>
+      <v-card 
+        class="iduser darkgrey"
+        xs12
         role="group"
         aria-label="1 / 5"
-        style="width: 262.842px; text-decoration: none; margin-right: 24px"
-      >
+        style="text-decoration: none;" >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-development-.svg"
           alt="web development"
@@ -70,13 +71,13 @@
             <v-icon small>mdi-arrow-right</v-icon>
           </v-btn>
         </span>
-      </a>
-      <a
-        href="#"
-        class="iduser"
+      </v-card>
+      <v-card
+        class="iduser darkgrey"
+        xs12
         role="group"
         aria-label="2 / 5"
-        style="width: 262.842px; text-decoration: none; margin-right: 24px"
+        style="text-decoration: none;"
       >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-backend.svg"
@@ -89,13 +90,13 @@
             <v-icon small>mdi-arrow-right</v-icon>
           </v-btn>
         </span>
-      </a>
-      <a
-        href="#"
-        class="iduser"
+      </v-card>
+      <v-card
+        class="iduser darkgrey"
+        xs12
         role="group"
         aria-label="3 / 5"
-        style="width: 262.842px; text-decoration: none; margin-right: 24px"
+        style="text-decoration: none;"
       >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/full-stack.svg"
@@ -110,13 +111,13 @@
             <v-icon small>mdi-arrow-right</v-icon>
           </v-btn>
         </span>
-      </a>
-      <a
-        href="#"
-        class="iduser"
+      </v-card>
+      <v-card
+        class="iduser darkgrey"
+        xs12
         role="group"
         aria-label="4 / 5"
-        style="width: 262.842px; text-decoration: none; margin-right: 24px"
+        style="text-decoration: none;"
       >
         <img
           src="https://avogtal.com/wp-content/themes/avogtal/assets/images/devops.svg"
@@ -131,9 +132,9 @@
             <v-icon small>mdi-arrow-right</v-icon>
           </v-btn>
         </span>
-      </a>
+      </v-card>
     </v-layout>
-    <v-layout style="background-color: #f1ebeb" class="btm">
+    <v-layout class="btm darkgrey">
       <v-flex md6
         ><v-img
           style="margin-top: 15%; margin-left: 30%"
@@ -153,29 +154,29 @@
         </h3>
         <h1 style="margin-left: 15%">Talk, Choose, Deploy</h1>
         <div class="text">
-          <h2 style="color: blue">Share Your Requirements</h2>
+          <h2 class="btnClass--text">Share Your Requirements</h2>
           <h3>
             We take a deep dive into your technical & cultural requirements, and
             your long term goals
           </h3>
           <br /><br />
-          <h2 style="color: blue">Get Matched With Engineers</h2>
+          <h2 class="btnClass--text">Get Matched With Engineers</h2>
           <h3>
             We map your requirements to our network, and handpick resources that
             are a perfect fit for you.
           </h3>
           <br /><br />
-          <h2 style="color: blue">Review Candidates And Start</h2>
+          <h2 class="btnClass--text">Review Candidates And Start</h2>
           <h3>
             Vet the candidates with us to find the best cultural and technical
             fit for your organization.
           </h3>
-         <span>
-          <v-btn style="background-color: blue;margin-top: 5%;width: 35%;height: 20% ">
-           <p style="margin-top: 15px;color:white">hire now</p> 
-            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
+          <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
         </div>
       </v-flex>
     </v-layout>
@@ -184,12 +185,12 @@
         <h2 style="text-align: center; color: #cdc8c8; margin-top: 7%">
           What Makes Us Different?
         </h2>
-        <h1 style="text-align: center;">
+        <h1 style="text-align: center">
           As-Needed Vetted Engineers At Your Service
         </h1>
       </v-flex>
     </v-layout>
- <v-layout row wrap justify-space-between justify-space-around mt-6>
+    <v-layout row wrap justify-space-between justify-space-around mt-6>
       <v-flex v-for="card in cards" :key="card.id" md5 class="mt-5">
         <v-card :class="card.cls" tile :flat="card.flat" hover>
           <v-img style="width: 100px" :src="card.image"></v-img>
@@ -363,71 +364,98 @@
           <div class="underline d-flex text-left justify-space-between">
             <div class="exprt-column">
               <ul>
-                <li>>  Backend Engineers</li>
+                <li>> Backend Engineers</li>
 
-                <li>>  UIUX Engineers</li>
+                <li>> UIUX Engineers</li>
 
-                <li>>  DevOps Engineers</li>
+                <li>> DevOps Engineers</li>
 
-                <li>>  Ember.Js Engineers</li>
+                <li>> Ember.Js Engineers</li>
 
-                <li>>  Full Stack Engineers</li>
+                <li>> Full Stack Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>>  Frontend Engineers</li>
+                <li>> Frontend Engineers</li>
 
-                <li>>  Magento Engineers</li>
+                <li>> Magento Engineers</li>
 
-                <li>>  Machine Learning Engineers</li>
+                <li>> Machine Learning Engineers</li>
 
-                <li>>  Jquery Engineers</li>
+                <li>> Jquery Engineers</li>
 
-                <li>>  React Native Engineers</li>
+                <li>> React Native Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>>  NET Engineers</li>
+                <li>> NET Engineers</li>
 
-                <li>>  Node.JS Engineers</li>
+                <li>> Node.JS Engineers</li>
 
-                <li>>  Backbone.JS Engineers</li>
+                <li>> Backbone.JS Engineers</li>
 
-                <li>>  Web Engineers</li>
+                <li>> Web Engineers</li>
 
-                <li>>  Ionic Engineers</li>
+                <li>> Ionic Engineers</li>
               </ul>
             </div>
 
             <div class="exprt-column">
               <ul>
-                <li>>  Python Engineers</li>
+                <li>> Python Engineers</li>
 
-                <li>>  Salesforce Engineers</li>
+                <li>> Salesforce Engineers</li>
 
-                <li>>  Software Engineers</li>
+                <li>> Software Engineers</li>
 
-                <li>>  Scala Engineers</li>
+                <li>> Scala Engineers</li>
 
-                <li>>  Kotlin Engineers</li>
+                <li>> Kotlin Engineers</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+      <v-dialog
+        transition="dialog-bottom-transition"
+        fullscreen
+        v-model="dialog"
+      >
+        <template v-slot:default>
+          <v-card>
+            <v-row>
+              <v-col cols="12" class="text-right">
+                <v-btn text fab @click="dialog = false">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn></v-col
+              >
+            </v-row>
+            <v-row>
+              <v-col>
+                <Work />
+              </v-col>
+            </v-row>
+          </v-card>
+        </template>
+      </v-dialog>
     </div>
   </div>
 </template>
 <script>
+import Work from "./Work.vue";
 export default {
   name: "home",
-   data(){
-      return{
-        row:0,
+  components: {
+    Work,
+  },
+  data() {
+    return {
+      dialog: false,
+      row: 0,
       cards: [
         {
           id: 0,
@@ -469,7 +497,7 @@ export default {
           cls: "Grey",
           flat: false,
         },
-          {
+        {
           id: 4,
           image:
             "https://avogtal.com/wp-content/themes/avogtal/assets/images/scalable.png",
@@ -490,8 +518,15 @@ export default {
           flat: false,
         },
       ],
-    }
-   }  
+    };
+  },
+  methods: {
+    HireTalent() {
+      console.log("Working");
+      this.dialog = true;
+      this.show2nd = false;
+    },
+  },
 };
 </script>
 
@@ -501,18 +536,17 @@ export default {
 }
 
 .button {
-    width: max-content;
-    display: inline-block;
-    background: blue;
-    border-radius: 4px;
-    padding: 15px 30px;
-    color: white
-    font-style normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 19px;
-    transition: .3s ease-in-out;
-    text-transform: uppercase;
+  width: max-content;
+  display: inline-block;
+  background: blue;
+  border-radius: 4px;
+  padding: 15px 30px;
+  color: white font-style normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 .iduser {
   max-height: 100%;
