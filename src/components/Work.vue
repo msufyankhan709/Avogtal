@@ -6,10 +6,10 @@
         <v-img src="@/assets/work.png"> </v-img>
       </v-flex>
       <br/>
-      <v-flex md5 class="purple6">
+      <v-flex md5 class="wight">
         <div>
           <br />
-          <p class="text-h4 font-weight-bold white--text text-center">
+          <p class="text-h4 font-weight-bold black--text text-center">
             Want To Join The Best Talent Network? Apply Here!
           </p>
         </div>
@@ -17,25 +17,25 @@
           <v-spacer></v-spacer>
           <v-col cols="5">
             <v-text-field
-              dark
+              
               label="First Name"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+              
               label="Phone Number"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+              
               label="Company Name"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-select
-              dark
+            
               label="Level of Experities"
               outlined
               :items="options"
@@ -43,7 +43,7 @@
             >
             </v-select>
             <v-text-field
-              dark
+            
               label="Reference Name"
               outlined
               style="width: 210px"
@@ -52,25 +52,25 @@
 
           <v-col cols="5">
             <v-text-field
-              dark
+            
               label="Last Name"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+              
               label="Email Address"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+              
               label="CV (Public link on Google Drive, etc)"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-select
-              dark
+              
               label="Most Proficient Technology"
               outlined
               :items="option"
@@ -78,7 +78,7 @@
             >
             </v-select>
             <v-text-field
-              dark
+            
               label="Reference Email"
               outlined
               style="width: 210px"
@@ -88,7 +88,7 @@
           <v-col style="margin-left: 8%" class="mt-n8" cols="10">
             <v-checkbox
               v-model="checkbox"
-              dark
+          
               label="I agree to AVOGTAL's Talent Network Terms & Conditions?"
               required
             ></v-checkbox>
@@ -97,7 +97,7 @@
             class="mt-n4"
             depressed
             style="margin-left: 10%"
-            color="font-weight-bold lightGrey black--text"
+            color="font-weight-bold footerBg white--text"
             large
           >
             Submit

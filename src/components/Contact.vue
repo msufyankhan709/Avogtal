@@ -5,11 +5,11 @@
       <v-flex md5 xs12>
         <v-img src="@/assets/dialog.png"> </v-img>
       </v-flex>
-      <v-flex md5 class="purple6">
+      <v-flex md5 class="white">
         <div>
           <br />
           <p
-          class="text-center text-md-h4 font-weight-bold white--text"
+          class="text-center text-md-h4 font-weight-bold black--text"
               >Hire Talent
           </p>
         </div>
@@ -17,19 +17,19 @@
           <v-spacer></v-spacer>
           <v-col cols="5">
             <v-text-field
-              dark
+            
               label="First Name"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+            
               label="Phone Number"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+            
               label="Company Name"
               outlined
               style="width: 210px"
@@ -38,19 +38,19 @@
 
           <v-col cols="5">
             <v-text-field
-              dark
+            
               label="Last Name"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+          
               label="Email Address"
               outlined
               style="width: 210px"
             ></v-text-field>
             <v-text-field
-              dark
+              
               label="Job Title"
               outlined
               style="width: 210px"
@@ -58,16 +58,16 @@
           </v-col>
           <v-spacer></v-spacer>
           <v-col style="margin-left: 8%" class="mt-n8" cols="10">
-            <p class="white--text">What Role Are You Looking To Hire?</p>
+            <p class="black--text">What Role Are You Looking To Hire?</p>
             <v-select
-              dark
+    
               :items="option"
               label="Select Item"
               dense
               outlined
             ></v-select>
-            <p class="white--text">Talent Requirements</p>
-            <v-textarea dark outlined dense label="Write Something">
+            <p class="black--text">Talent Requirements</p>
+            <v-textarea  outlined dense label="Write Something">
             </v-textarea>
           </v-col>
           <v-btn
@@ -75,7 +75,7 @@
             depressed
             dialog.value="false"
             style="margin-left: 10%"
-            color="font-weight-bold lightGrey black--text"
+            color="font-weight-bold footerBg white--text"
             large
           >
             Submit

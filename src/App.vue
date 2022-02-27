@@ -46,7 +46,7 @@
             </v-row>
             <v-row v-else>
               <v-col>
-                <work />
+                <Work />
               </v-col>
             </v-row>
           </v-card>
@@ -60,13 +60,13 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-import Contact from "../src/components/Contact.vue";
-import work from "../src/components/Test.vue";
+import Contact from "@/components/Contact.vue";
+import Work from "@/components/Work.vue";
 export default Vue.extend({
   name: "App",
   components: {
     Contact,
-    work
+    Work,
   },
 
   data: () => ({
