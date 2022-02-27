@@ -1,17 +1,18 @@
 <template>
   <div>
-    <home />
+    <page-3 />
     <Footer />
   </div>
 </template>
+
 <script>
-import home from "../components/home.vue";
-import Footer from "../components/Footer.vue";
+import Footer from "@/components/Footer.vue";
+import page3 from "@/components/page3.vue";
 export default {
-  name: "Home",
+  name: "vapp",
   components: {
-    home,
     Footer,
+    page3,
   },
 };
 </script>
