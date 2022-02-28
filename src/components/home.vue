@@ -12,6 +12,7 @@
           <span>
             <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
               hire now
+
               <v-icon style="color: white" small>mdi-arrow-right</v-icon>
             </v-btn>
           </span>
