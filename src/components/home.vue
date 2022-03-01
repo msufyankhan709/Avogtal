@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-layout style="background-color: #f1ebeb">
-      <v-flex md6 style="margin-top: 10%">
+    <v-layout class="darkgrey">
+      <v-flex md6 class="mt-16 pt-16 hidden-sm-and-down">
         <div class="user">
           <h1>Build Your Software</h1>
           <h1>Development Dream Team Now</h1>
@@ -18,7 +18,32 @@
           </span>
         </div>
       </v-flex>
-      <v-flex>
+      <v-flex class="hidden-sm-and-down">
+        <v-img
+          style="margin-top: 70px; margin-left: 30px; width: 80%"
+          src="@/assets/app.png"
+        ></v-img>
+      </v-flex>
+    </v-layout>
+     <v-layout row wrap class="darkgrey">
+      <v-flex xs12 class="mt-16 pt-16 hidden-md-and-up">
+        <div align="center">
+          <h1>Build Your Software</h1>
+          <h1>Development Dream Team Now</h1>
+          <h3>
+            We are the development partner of choice for over 300 <br />
+            clients.
+          </h3>
+          <span>
+            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
+              hire now
+
+              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
+        </div>
+      </v-flex>
+      <v-flex xs12 class="hidden-md-and-up">
         <v-img
           style="margin-top: 70px; margin-left: 30px; width: 80%"
           src="@/assets/app.png"
@@ -26,14 +51,11 @@
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex md1 class="ml-6"
-        ><h3 class="mt-5 blue--text">trusted by:</h3></v-flex
-      >
-      <v-flex md2
-        ><v-img
-          style="width: 200px; margin-left: 10%"
-          src="@/assets/log.png"
-        ></v-img
+      <v-flex md1 class="mt-6 ml-10">
+        <span class="text-h6 blue--text">Trusted by: </span>
+      </v-flex>
+      <v-flex md2>
+        <v-img width="200px" class="mt-3 ml-8" src="@/assets/log.png"> </v-img
       ></v-flex>
     </v-layout>
     <v-divider class="mt-7"> </v-divider>
@@ -48,142 +70,160 @@
         </v-container>
       </div>
     </v-layout>
+    <v-layout row wrap justify-space-around justify-space-between>
+      <v-flex md12 sm12 class="text-center mb-6">
+        <h3 class="DarkGrey--text">What We Offer</h3>
+        <span class="text-h4 font-weight-black shadow white--text"
+          >Talent You Can Hire</span
+        >
+      </v-flex>
+      <v-flex md3 sm4 class="text-center">
+        <v-card
+          class="iduser darkgrey"
+          role="group"
+          aria-label="1 / 5"
+          style="text-decoration: none"
+        >
+          <img
+            src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-development-.svg"
+            alt="web development"
+          />
 
-    <h3 style="margin-left: 45%; margin-top: 7%; color: #cdc8c8">
-      What We Offer
-    </h3>
-    <h1 style="text-align: center">Talent You Can Hire</h1>
-    <v-layout justify-center align-center justify-space-around justify-space-between>
-      <v-card 
-        class="iduser darkgrey"
-        xs12
-        role="group"
-        aria-label="1 / 5"
-        style="text-decoration: none;" >
-        <img
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-development-.svg"
-          alt="web development"
-        />
-
-        <h3>Front-End Engineers</h3>
-        <span class="btn" style="display: block">
-          <v-btn text plain medium>
-            explore
-            <v-icon small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
-      </v-card>
-      <v-card
-        class="iduser darkgrey"
-        xs12
-        role="group"
-        aria-label="2 / 5"
-        style="text-decoration: none;"
-      >
-        <img
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-backend.svg"
-          alt="back-end"
-        />
-        <h3>Back-End Engineers</h3>
-        <span class="btn" style="display: block">
-          <v-btn text plain medium>
-            explore
-            <v-icon small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
-      </v-card>
-      <v-card
-        class="iduser darkgrey"
-        xs12
-        role="group"
-        aria-label="3 / 5"
-        style="text-decoration: none;"
-      >
-        <img
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/full-stack.svg"
-          alt="full-stack"
-        />
-
-        <h3>Full-Stack Engineers</h3>
-
-        <span class="btn" style="display: block">
-          <v-btn text plain medium>
-            explore
-            <v-icon small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
-      </v-card>
-      <v-card
-        class="iduser darkgrey"
-        xs12
-        role="group"
-        aria-label="4 / 5"
-        style="text-decoration: none;"
-      >
-        <img
-          src="https://avogtal.com/wp-content/themes/avogtal/assets/images/devops.svg"
-          alt="devops"
-        />
-
-        <h3>DevOps Engineers</h3>
-
-        <span class="btn" style="display: block">
-          <v-btn text plain medium>
-            explore
-            <v-icon small>mdi-arrow-right</v-icon>
-          </v-btn>
-        </span>
-      </v-card>
-    </v-layout>
-    <v-layout class="btm darkgrey">
-      <v-flex md6
-        ><v-img
-          style="margin-top: 15%; margin-left: 30%"
-          src="@/assets/hw-img.png"
-        ></v-img
-      ></v-flex>
-      <div class="line">
-        <v-timeline>
-          <v-timeline-item></v-timeline-item>
-          <v-timeline-item class="text-right"> </v-timeline-item>
-          <v-timeline-item></v-timeline-item>
-        </v-timeline>
-      </div>
-      <v-flex md6>
-        <h3 style="margin-left: 15%; color: #cdc8c8; margin-top: 20%">
-          How It Works
-        </h3>
-        <h1 style="margin-left: 15%">Talk, Choose, Deploy</h1>
-        <div class="text">
-          <h2 class="btnClass--text">Share Your Requirements</h2>
-          <h3>
-            We take a deep dive into your technical & cultural requirements, and
-            your long term goals
-          </h3>
-          <br /><br />
-          <h2 class="btnClass--text">Get Matched With Engineers</h2>
-          <h3>
-            We map your requirements to our network, and handpick resources that
-            are a perfect fit for you.
-          </h3>
-          <br /><br />
-          <h2 class="btnClass--text">Review Candidates And Start</h2>
-          <h3>
-            Vet the candidates with us to find the best cultural and technical
-            fit for your organization.
-          </h3>
-          <span>
-            <v-btn @click="HireTalent" class="mt-6 pa-5 btnClass white--text">
-              hire now
-              <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+          <h3>Front-End Engineers</h3>
+          <span class="btn" style="display: block">
+            <v-btn text plain medium>
+              explore
+              <v-icon small>mdi-arrow-right</v-icon>
             </v-btn>
           </span>
+        </v-card>
+      </v-flex>
+      <v-flex md3 sm4 class="text-center">
+        <v-card
+          class="iduser darkgrey"
+          role="group"
+          aria-label="2 / 5"
+          style="text-decoration: none"
+        >
+          <img
+            src="https://avogtal.com/wp-content/themes/avogtal/assets/images/web-backend.svg"
+            alt="back-end"
+          />
+          <h3>Back-End Engineers</h3>
+          <span class="btn" style="display: block">
+            <v-btn text plain medium>
+              explore
+              <v-icon small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
+        </v-card>
+      </v-flex>
+      <v-flex md3 sm4 class="text-center">
+        <v-card
+          class="iduser darkgrey"
+          role="group"
+          aria-label="3 / 5"
+          style="text-decoration: none"
+        >
+          <img
+            src="https://avogtal.com/wp-content/themes/avogtal/assets/images/full-stack.svg"
+            alt="full-stack"
+          />
+
+          <h3>Full-Stack Engineers</h3>
+
+          <span class="btn" style="display: block">
+            <v-btn text plain medium>
+              explore
+              <v-icon small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
+        </v-card>
+      </v-flex>
+      <v-flex md3 sm4 class="text-center">
+        <v-card
+          class="iduser darkgrey"
+          role="group"
+          aria-label="4 / 5"
+          style="text-decoration: none"
+        >
+          <img
+            src="https://avogtal.com/wp-content/themes/avogtal/assets/images/devops.svg"
+            alt="devops"
+          />
+
+          <h3>DevOps Engineers</h3>
+
+          <span class="btn" style="display: block">
+            <v-btn text plain medium>
+              explore
+              <v-icon small>mdi-arrow-right</v-icon>
+            </v-btn>
+          </span>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <v-layout align-content-space-around class="darkgrey">
+      <v-flex md5 sm12>
+        <p class="ma-5">
+          <v-img width="100%" src="@/assets/hw-img.png"> </v-img>
+        </p>
+      </v-flex>
+      <v-flex md7 sm12>
+        <div class="text-center my-5">
+          <h3>How It Works</h3>
+          <h1>Talk, Choose, Deploy</h1>
+        </div>
+        <div class="pr-16">
+          <v-timeline>
+            <v-timeline-item color="btnClass" right>
+              <span class="title btnClass--text"> Share Your Requirements </span
+              ><br />
+              <span class="subheading">
+                We take a deep dive into your technical & cultural requirements,
+                and your long term goals
+              </span>
+            </v-timeline-item>
+            <v-timeline-item color="btnClass" right>
+              <span class="title btnClass--text">
+                Get Matched With Engineers </span
+              ><br />
+              <span class="subheading">
+                We map your requirements to our network, and handpick resources
+                that are a perfect fit for you.
+              </span></v-timeline-item
+            >
+            <v-timeline-item color="btnClass" right>
+              <span class="title btnClass--text"
+                >Review Candidates And Start</span
+              ><br />
+              <span class="subheading">
+                Vet the candidates with us to find the best cultural and
+                technical fit for your organization.
+              </span></v-timeline-item
+            >
+          </v-timeline>
+          <v-btn @click="HireTalent" class="btnClass white--text">
+            hire now
+            <v-icon style="color: white" small>mdi-arrow-right</v-icon>
+          </v-btn>
         </div>
       </v-flex>
     </v-layout>
     <v-layout>
       <v-flex>
-        <h2 style="text-align: center; color: #cdc8c8; margin-top: 7%">
+        <h2
+          class="
+            row
+            wrap
+            justify-space-around justify-space-between
+            mt-16
+            text-h4
+            font-weight-black
+            shadow
+            white--text
+          "
+        >
           What Makes Us Different?
         </h2>
         <h1 style="text-align: center">
@@ -535,7 +575,9 @@ export default {
 .user {
   margin-left: 100px;
 }
-
+.shadow {
+  text-shadow: 0px 0px 7px rgba(15, 0, 37, 0.411);
+}
 .button {
   width: max-content;
   display: inline-block;
@@ -557,10 +599,6 @@ export default {
   box-sizing: border-box;
   border-radius: 8px;
   margin-left: 45px;
-}
-.btm {
-  width: 100%;
-  margin-top: 7%;
 }
 .btn {
   opacity: 0;
