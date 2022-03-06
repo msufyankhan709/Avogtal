@@ -3,13 +3,6 @@
     <v-footer dark padless>
       <v-card dark class="footerBg footer" flat tile>
         <v-card-text>
-          <!-- <div class="text-right">
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
-            <v-icon size="24px">
-              {{ icon }}
-            </v-icon>
-          </v-btn>
-        </div> -->
           <div class="d-flex justify-space-between justify-space-around">
             <div class="text-left left">
               <img

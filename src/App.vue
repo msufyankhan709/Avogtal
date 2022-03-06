@@ -1,6 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar color="white" dark fixed>
+    <!-- <v-app-bar color="white" dark fixed> -->
+     <div v-if="!isMobile">
+      <Laptop />
+    </div>
+    <div v-else>
+      <Mobile />
+    </div>
       <router-link :to="{ name: 'Home' }">
         <v-img
           style="max-width: 180px; margin-left: 1%"
@@ -52,7 +58,7 @@
           </v-card>
         </template>
       </v-dialog>
-    </v-app-bar>
+    <!-- </v-app-bar> -->
     <v-main>
       <router-view />
     </v-main>
@@ -61,12 +67,14 @@
 <script lang="ts">
 import Vue from "vue";
 import Contact from "@/components/Contact.vue";
+import Mobile from '@/components/mobile.vue'
 import Work from "../src/components/Work.vue";
 export default Vue.extend({
   name: "App",
   components: {
     Contact,
     Work,
+    Mobile
   },
 
   data: () => ({
@@ -82,6 +90,11 @@ export default Vue.extend({
     findWork() {
       this.dialog = true;
       this.show2nd = true;
+    },
+  },
+  computed: {
+    isMobile() {
+      return this.$vuetify.breakpoint.smAndDown ? true : false;
     },
   },
 });
